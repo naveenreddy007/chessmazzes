@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Academy — Empower Your Chess School",
-  description: "Give your students access to the most advanced AI-powered chess training platform. Track progress, manage curriculum, and watch them improve.",
+  title: "Academy Dashboard — Empower Your Chess School",
+  description: "Give your chess academy a dedicated Organization Dashboard. Help your students improve faster with AI-powered weakness detection and centralized progress tracking.",
   openGraph: {
-    title: "ChessMazes Academy — AI Training for Chess Schools",
-    description: "Manage 5 or 500 students with powerful dashboards, AI-driven training, and detailed progress tracking. 98% satisfaction rate.",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "ChessMazes Academy" }],
+    title: "ChessMazes Academy — Organization Dashboard for Coaches",
+    description: "Equip your chess school with a powerful Organization Dashboard. Track student progress, identify weaknesses instantly, and provide targeted AI training.",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "ChessMazes Academy Dashboard" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ChessMazes Academy — AI Training for Chess Schools",
-    description: "Manage 5 or 500 students with powerful dashboards and AI-driven training.",
+    title: "ChessMazes Academy — Organization Dashboard for Coaches",
+    description: "Equip your chess school with a powerful Organization Dashboard to track student progress and provide targeted AI training.",
     images: ["/og-image.jpg"],
   },
 };

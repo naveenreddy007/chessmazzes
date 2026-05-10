@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://chessmazes.com"),
+  metadataBase: new URL("https://chessmazes.org"),
   title: {
     default: "ChessMazes — AI Chess Improvement Coach | Fix Your Mistakes, Improve Daily",
     template: "%s | ChessMazes",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "chess strategy",
     "chess ELO improvement",
   ],
-  authors: [{ name: "ChessMazes", url: "https://chessmazes.com" }],
+  authors: [{ name: "ChessMazes", url: "https://chessmazes.org" }],
   creator: "ChessMazes",
   publisher: "ChessMazes",
   robots: {
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
       "Turn your real game mistakes into personalized training plans. AI-powered weakness detection and structured improvement.",
     type: "website",
     siteName: "ChessMazes",
-    url: "https://chessmazes.com",
+    url: "https://chessmazes.org",
     locale: "en_US",
     images: [
       {

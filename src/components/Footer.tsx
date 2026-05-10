@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const footerLinks = {
   Product: [
@@ -32,6 +33,9 @@ const socialLinks = [
 ];
 
 export default function Footer() {
+  const pathname = usePathname();
+  if (pathname === "/academy/demo") return null;
+
   return (
     <footer className="relative border-t border-foreground/5 z-10 bg-background/40 backdrop-blur-md">
       {/* Gradient top border overlay */}

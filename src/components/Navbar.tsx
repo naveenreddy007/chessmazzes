@@ -27,10 +27,11 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close mobile menu on route change
   useEffect(() => {
     setMobileOpen(false);
   }, [pathname]);
+
+  if (pathname === "/academy/demo") return null;
 
   return (
     <>

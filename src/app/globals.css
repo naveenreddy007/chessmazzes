@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-:root {
+:root, html.light {
   color-scheme: light dark;
   
   --background: #f1f5f9; /* Softer slate-100 */
@@ -25,26 +25,26 @@
   --glass-bg-strong: rgba(248, 250, 252, 0.9);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #06090f;
-    --foreground: #e8ecf4;
-    
-    --primary: #3b82f6;       /* Electric Blue */
-    --secondary: #8b5cf6;     /* Violet */
-    --accent: #06b6d4;        /* Cyan */
-    --surface: #0a0e1a;       /* Dark Navy */
-    --surface-light: #111827; /* Card Background */
-    
-    --emerald: #10b981;
-    --rose: #f43f5e;
-    --amber: #f59e0b;
-    
-    --border-subtle: rgba(255, 255, 255, 0.06);
-    --border-glass: rgba(255, 255, 255, 0.1);
-    --glass-bg: rgba(15, 22, 41, 0.6);
-    --glass-bg-strong: rgba(15, 22, 41, 0.85);
-  }
+html.dark {
+  color-scheme: dark;
+  
+  --background: #06090f;
+  --foreground: #e8ecf4;
+  
+  --primary: #3b82f6;       /* Electric Blue */
+  --secondary: #8b5cf6;     /* Violet */
+  --accent: #06b6d4;        /* Cyan */
+  --surface: #0a0e1a;       /* Dark Navy */
+  --surface-light: #111827; /* Card Background */
+  
+  --emerald: #10b981;
+  --rose: #f43f5e;
+  --amber: #f59e0b;
+  
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-glass: rgba(255, 255, 255, 0.1);
+  --glass-bg: rgba(15, 22, 41, 0.6);
+  --glass-bg-strong: rgba(15, 22, 41, 0.85);
 }
 
 @theme inline {

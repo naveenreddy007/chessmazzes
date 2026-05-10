@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import { useTheme } from "@/components/ThemeProvider";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -18,6 +19,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -82,8 +84,24 @@ export default function Navbar() {
             })}
           </div>
 
-          {/* CTA — Coming Soon */}
+          {/* CTA + Theme Toggle */}
           <div className="hidden md:flex items-center gap-3">
+            <button
+              onClick={toggleTheme}
+              className="w-9 h-9 rounded-xl border border-foreground/10 bg-foreground/5 flex items-center justify-center hover:bg-foreground/10 hover:border-foreground/20 transition-all duration-300 group"
+              aria-label="Toggle theme"
+            >
+              <motion.span
+                key={theme}
+                initial={{ rotate: -90, opacity: 0, scale: 0.5 }}
+                animate={{ rotate: 0, opacity: 1, scale: 1 }}
+                exit={{ rotate: 90, opacity: 0, scale: 0.5 }}
+                transition={{ duration: 0.3 }}
+                className="text-sm group-hover:scale-110 transition-transform"
+              >
+                {theme === "dark" ? "☀️" : "🌙"}
+              </motion.span>
+            </button>
             <Link
               href="/pricing"
               className="btn-primary !px-5 !py-2.5 !text-sm"
@@ -146,6 +164,13 @@ export default function Navbar() {
                 </motion.div>
               ))}
               <div className="pt-6 border-t border-foreground/10 flex flex-col gap-3">
+                <button
+                  onClick={toggleTheme}
+                  className="flex items-center justify-center gap-3 py-3 rounded-xl border border-foreground/10 bg-foreground/5 text-foreground/80 font-medium transition-all"
+                >
+                  <span className="text-lg">{theme === "dark" ? "☀️" : "🌙"}</span>
+                  <span>{theme === "dark" ? "Light Mode" : "Dark Mode"}</span>
+                </button>
                 <Link
                   href="/pricing"
                   className="btn-primary text-center"

@@ -58,7 +58,7 @@ export default function Academy() {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
               Empower Your <span className="gradient-text-warm">Academy</span>
             </h2>
-            <p className="text-foreground/40 text-lg mb-8 leading-relaxed">
+            <p className="text-foreground/60 text-lg mb-8 leading-relaxed">
               Give your students the most advanced training system available. Track their progress, manage training plans, and watch them improve systematically.
             </p>
 
@@ -76,7 +76,7 @@ export default function Academy() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">{feat.title}</h4>
-                    <p className="text-sm text-foreground/40 leading-relaxed">{feat.desc}</p>
+                    <p className="text-sm text-foreground/60 leading-relaxed">{feat.desc}</p>
                   </div>
                 </motion.div>
               ))}
@@ -93,10 +93,10 @@ export default function Academy() {
                   className="p-6 rounded-xl bg-emerald/5 border border-emerald/10 text-center max-w-md"
                 >
                   <p className="text-emerald font-semibold mb-1">Inquiry Sent Successfully!</p>
-                  <p className="text-foreground/40 text-xs">We&apos;ll get back to you shortly.</p>
+                  <p className="text-foreground/60 text-xs">We&apos;ll get back to you shortly.</p>
                   <button
                     onClick={() => setStatus("idle")}
-                    className="mt-4 text-[10px] text-foreground/30 uppercase tracking-widest hover:text-foreground transition-colors"
+                    className="mt-4 text-[10px] text-foreground/50 uppercase tracking-widest hover:text-foreground transition-colors"
                   >
                     Send Another
                   </button>
@@ -157,7 +157,7 @@ export default function Academy() {
                     { label: "Active Today", value: "31", trend: "+12" },
                   ].map((stat) => (
                     <div key={stat.label} className="bg-foreground/[0.03] rounded-xl p-3 border border-foreground/5">
-                      <div className="text-xs text-foreground/30 mb-1">{stat.label}</div>
+                      <div className="text-xs text-foreground/50 mb-1">{stat.label}</div>
                       <div className="text-lg font-bold text-foreground">{stat.value}</div>
                       <div className="text-xs text-emerald">{stat.trend}</div>
                     </div>
@@ -177,7 +177,7 @@ export default function Academy() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <div className="text-sm font-medium text-foreground">{student.name}</div>
-                        <div className="text-xs text-foreground/30">ELO {student.rating}</div>
+                        <div className="text-xs text-foreground/50">ELO {student.rating}</div>
                       </div>
                       <div className="w-20">
                         <div className="h-1.5 bg-foreground/5 rounded-full overflow-hidden">
@@ -187,7 +187,7 @@ export default function Academy() {
                           />
                         </div>
                       </div>
-                      <span className="text-xs text-foreground/40">{student.progress}%</span>
+                      <span className="text-xs text-foreground/60">{student.progress}%</span>
                     </div>
                   ))}
                 </div>

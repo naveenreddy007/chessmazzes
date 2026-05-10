@@ -3,15 +3,15 @@
 :root {
   color-scheme: light dark;
   
-  --background: #f8fafc;
-  --foreground: #0f172a;
+  --background: #f1f5f9; /* Softer slate-100 */
+  --foreground: #020617; /* Very dark slate-950 for better opacity contrast */
   
   /* Semantic Brand Colors - CHANGE THESE TO UPDATE THEME */
-  --primary: #2563eb;       /* Electric Blue */
-  --secondary: #7c3aed;     /* Violet */
-  --accent: #0891b2;        /* Cyan */
-  --surface: #ffffff;       /* Light Surface */
-  --surface-light: #f1f5f9; /* Card Background */
+  --primary: #3b82f6;       /* Electric Blue */
+  --secondary: #8b5cf6;     /* Violet */
+  --accent: #06b6d4;        /* Cyan */
+  --surface: #f8fafc;       /* Off-white slate-50 instead of pure white */
+  --surface-light: #e2e8f0; /* Softer card background slate-200 */
   
   /* Utility Colors */
   --emerald: #059669;
@@ -19,10 +19,10 @@
   --amber: #d97706;
   
   /* Glass & Borders */
-  --border-subtle: rgba(0, 0, 0, 0.08);
-  --border-glass: rgba(0, 0, 0, 0.15);
-  --glass-bg: rgba(255, 255, 255, 0.7);
-  --glass-bg-strong: rgba(255, 255, 255, 0.9);
+  --border-subtle: rgba(15, 23, 42, 0.08); /* slate-900 with opacity */
+  --border-glass: rgba(15, 23, 42, 0.15);
+  --glass-bg: rgba(248, 250, 252, 0.7); /* Base on surface */
+  --glass-bg-strong: rgba(248, 250, 252, 0.9);
 }
 
 @media (prefers-color-scheme: dark) {

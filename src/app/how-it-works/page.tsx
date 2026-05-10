@@ -36,7 +36,7 @@ export default function HowItWorksPage() {
             From Mistakes to{" "}
             <span className="gradient-text">Mastery</span>
           </h1>
-          <p className="text-xl text-foreground/40 max-w-2xl mx-auto leading-relaxed mb-10">
+          <p className="text-xl text-foreground/60 max-w-2xl mx-auto leading-relaxed mb-10">
             ChessMazes uses a proven 5-step loop to systematically eliminate your chess weaknesses 
             and build lasting improvement.
           </p>
@@ -46,10 +46,10 @@ export default function HowItWorksPage() {
             {["Upload", "Analyze", "Detect", "Train", "Improve"].map((step, i) => (
               <div key={step} className="flex items-center gap-3 sm:gap-4">
                 <div className="flex flex-col items-center">
-                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-white/5 to-white/[0.02] border border-foreground/10 flex items-center justify-center text-xs font-bold text-white/60">
+                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-foreground/5 to-foreground/[0.02] border border-foreground/10 flex items-center justify-center text-xs font-bold text-foreground/60">
                     {i + 1}
                   </div>
-                  <span className="text-[10px] text-foreground/30 mt-1.5">{step}</span>
+                  <span className="text-[10px] text-foreground/50 mt-1.5">{step}</span>
                 </div>
                 {i < 4 && (
                   <div className="w-6 sm:w-8 h-px bg-gradient-to-r from-violet/40 to-cyan/40 -mt-3" />
@@ -73,7 +73,7 @@ export default function HowItWorksPage() {
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-6">
             The <span className="gradient-text">Improvement Loop</span>
           </h2>
-          <p className="text-foreground/40 text-lg mb-12 max-w-2xl mx-auto">
+          <p className="text-foreground/60 text-lg mb-12 max-w-2xl mx-auto">
             Unlike other platforms that give you random puzzles, ChessMazes creates a continuous feedback loop 
             that adapts to your progress every single day.
           </p>
@@ -88,7 +88,7 @@ export default function HowItWorksPage() {
                 <div className="text-3xl mb-4">{item.icon}</div>
                 <div className="text-xs font-mono text-violet/50 mb-2">STEP {i + 1}</div>
                 <h3 className="text-lg font-bold text-foreground mb-2">{item.step}</h3>
-                <p className="text-sm text-foreground/40 group-hover:text-foreground/55 transition-colors">{item.desc}</p>
+                <p className="text-sm text-foreground/60 group-hover:text-foreground/75 transition-colors">{item.desc}</p>
               </div>
             ))}
           </div>

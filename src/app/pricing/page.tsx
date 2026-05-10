@@ -36,7 +36,7 @@ export default function PricingPage() {
             Pricing{" "}
             <span className="gradient-text">Coming Soon</span>
           </h1>
-          <p className="text-xl text-foreground/40 max-w-2xl mx-auto leading-relaxed mb-10">
+          <p className="text-xl text-foreground/60 max-w-2xl mx-auto leading-relaxed mb-10">
             We&apos;re finalizing our plans to bring you the best value in AI chess coaching. 
             Join the waitlist to get notified and receive exclusive early-bird pricing.
           </p>
@@ -48,7 +48,7 @@ export default function PricingPage() {
               { icon: "⚡", text: "Early Bird Discount" },
               { icon: "💰", text: "Free Tier Included" },
             ].map((item) => (
-              <div key={item.text} className="flex items-center gap-2 text-sm text-foreground/40">
+              <div key={item.text} className="flex items-center gap-2 text-sm text-foreground/60">
                 <span>{item.icon}</span>
                 <span>{item.text}</span>
               </div>

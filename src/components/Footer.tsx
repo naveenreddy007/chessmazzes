@@ -33,7 +33,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="relative border-t border-foreground/5 z-10 bg-[rgba(6,9,15,0.4)] backdrop-blur-md">
+    <footer className="relative border-t border-foreground/5 z-10 bg-background/40 backdrop-blur-md">
       {/* Gradient top border overlay */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-violet/30 to-transparent" />
 
@@ -54,7 +54,7 @@ export default function Footer() {
                 Chess<span className="gradient-text">Mazes</span>
               </span>
             </Link>
-            <p className="text-foreground/40 leading-relaxed max-w-xs mb-8 text-sm sm:text-base">
+            <p className="text-foreground/60 leading-relaxed max-w-xs mb-8 text-sm sm:text-base">
               The ultimate AI chess coaching platform. We analyze your real game mistakes and create a personalized path to mastery.
             </p>
 
@@ -67,7 +67,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className="w-10 h-10 rounded-xl bg-foreground/5 border border-foreground/5 flex items-center justify-center text-foreground/40 hover:text-foreground hover:bg-foreground/10 hover:border-foreground/20 transition-all duration-300"
+                  className="w-10 h-10 rounded-xl bg-foreground/5 border border-foreground/5 flex items-center justify-center text-foreground/60 hover:text-foreground hover:bg-foreground/10 hover:border-foreground/20 transition-all duration-300"
                 >
                   <span className="text-sm">{social.icon}</span>
                 </a>
@@ -84,7 +84,7 @@ export default function Footer() {
                   <li key={link.label}>
                     <Link
                       href={link.href}
-                      className="text-sm sm:text-base text-foreground/30 hover:text-foreground hover:translate-x-1 inline-block transition-all duration-300"
+                      className="text-sm sm:text-base text-foreground/50 hover:text-foreground hover:translate-x-1 inline-block transition-all duration-300"
                     >
                       {link.label}
                     </Link>
@@ -102,7 +102,7 @@ export default function Footer() {
                 <span className="w-1.5 h-1.5 rounded-full bg-amber animate-pulse" />
                 <span className="text-[10px] font-bold text-amber uppercase tracking-wider">Coming Soon</span>
               </div>
-              <p className="text-xs text-foreground/30 leading-relaxed">
+              <p className="text-xs text-foreground/50 leading-relaxed">
                 App is currently in private beta. Join the waitlist for early access.
               </p>
             </div>
@@ -111,18 +111,18 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-10 border-t border-foreground/5 flex flex-col md:flex-row items-center justify-between gap-6">
-          <p className="text-xs font-medium text-foreground/20">
+          <p className="text-xs font-medium text-foreground/40">
             © {new Date().getFullYear()} ChessMazes. All rights reserved.
           </p>
           
           <div className="flex items-center gap-8">
             <div className="flex items-center gap-2">
-              <span className="text-[10px] font-bold text-foreground/20 uppercase tracking-widest">Built with</span>
+              <span className="text-[10px] font-bold text-foreground/40 uppercase tracking-widest">Built with</span>
               <span className="text-lg">♟</span>
             </div>
             <Link 
               href="/contact" 
-              className="text-[10px] font-bold text-foreground/40 uppercase tracking-widest hover:text-foreground transition-colors"
+              className="text-[10px] font-bold text-foreground/60 uppercase tracking-widest hover:text-foreground transition-colors"
             >
               Support Center
             </Link>

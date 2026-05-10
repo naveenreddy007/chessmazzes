@@ -34,15 +34,15 @@ export default function BlogPage() {
             <div key={post.title} className="glass-card p-8 group hover:border-foreground/20 transition-all duration-300">
               <span className="text-[10px] font-bold text-blue-electric uppercase tracking-widest mb-4 block">{post.category}</span>
               <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-blue-glow transition-colors">{post.title}</h3>
-              <p className="text-foreground/40 text-sm mb-6 leading-relaxed">{post.excerpt}</p>
-              <div className="text-xs text-foreground/20">{post.date}</div>
+              <p className="text-foreground/60 text-sm mb-6 leading-relaxed">{post.excerpt}</p>
+              <div className="text-xs text-foreground/40">{post.date}</div>
             </div>
           ))}
         </div>
 
         <div className="text-center py-20 border-t border-foreground/5">
           <h2 className="text-2xl font-bold text-foreground mb-4">More articles coming soon</h2>
-          <p className="text-foreground/40">Subscribe to our newsletter for the latest updates.</p>
+          <p className="text-foreground/60">Subscribe to our newsletter for the latest updates.</p>
         </div>
       </section>
       <FinalCTA />

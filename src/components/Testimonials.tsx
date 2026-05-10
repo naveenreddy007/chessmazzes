@@ -51,7 +51,7 @@ export default function Testimonials() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
             Players <span className="gradient-text">Love It</span>
           </h2>
-          <p className="text-foreground/40 text-lg max-w-2xl mx-auto">
+          <p className="text-foreground/60 text-lg max-w-2xl mx-auto">
             Join thousands of players who are improving faster with ChessMazes.
           </p>
         </motion.div>
@@ -74,7 +74,7 @@ export default function Testimonials() {
                 </div>
 
                 {/* Quote */}
-                <p className="text-sm text-foreground/50 leading-relaxed mb-5 group-hover:text-foreground/65 transition-colors">
+                <p className="text-sm text-foreground/70 leading-relaxed mb-5 group-hover:text-foreground/65 transition-colors">
                   &ldquo;{t.text}&rdquo;
                 </p>
 
@@ -88,7 +88,7 @@ export default function Testimonials() {
                   </div>
                   <div>
                     <div className="text-sm font-medium text-foreground">{t.name}</div>
-                    <div className="text-xs text-foreground/30">{t.rating}</div>
+                    <div className="text-xs text-foreground/50">{t.rating}</div>
                   </div>
                 </div>
               </div>

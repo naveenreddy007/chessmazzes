@@ -55,7 +55,7 @@ export default function Features() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
             Everything You Need to <span className="gradient-text">Level Up</span>
           </h2>
-          <p className="text-foreground/40 text-lg max-w-2xl mx-auto">
+          <p className="text-foreground/60 text-lg max-w-2xl mx-auto">
             A complete chess improvement ecosystem powered by artificial intelligence.
           </p>
         </motion.div>
@@ -78,7 +78,7 @@ export default function Features() {
                 </div>
 
                 <h3 className="text-lg font-bold text-foreground mb-2">{feat.title}</h3>
-                <p className="text-foreground/40 text-sm leading-relaxed group-hover:text-foreground/55 transition-colors duration-300">{feat.desc}</p>
+                <p className="text-foreground/60 text-sm leading-relaxed group-hover:text-foreground/75 transition-colors duration-300">{feat.desc}</p>
               </div>
             </motion.div>
           ))}

@@ -31,7 +31,7 @@ export default function HowItWorks() {
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
             How <span className="gradient-text">ChessMazes</span> Works
           </h2>
-          <p className="text-foreground/40 text-lg max-w-2xl mx-auto">
+          <p className="text-foreground/60 text-lg max-w-2xl mx-auto">
             From your real games to measurable improvement — in five simple steps.
           </p>
         </motion.div>
@@ -65,7 +65,7 @@ export default function HowItWorks() {
                         <h3 className="text-lg font-bold text-foreground">{step.title}</h3>
                       </div>
                     </div>
-                    <p className="text-foreground/40 text-sm leading-relaxed group-hover:text-foreground/55 transition-colors">{step.desc}</p>
+                    <p className="text-foreground/60 text-sm leading-relaxed group-hover:text-foreground/75 transition-colors">{step.desc}</p>
                   </div>
                 </div>
               </motion.div>

@@ -96,12 +96,12 @@ export default function CoachingSection() {
                   transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
                   className="flex gap-4 group"
                 >
-                  <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-white/5 to-white/[0.02] flex items-center justify-center text-lg flex-shrink-0 border border-foreground/[0.06] group-hover:border-foreground/10 transition-colors">
+                  <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-foreground/5 to-foreground/[0.02] flex items-center justify-center text-lg flex-shrink-0 border border-foreground/[0.06] group-hover:border-foreground/10 transition-colors">
                     {feat.icon}
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground text-sm mb-0.5">{feat.title}</h4>
-                    <p className="text-xs text-foreground/35 leading-relaxed">{feat.desc}</p>
+                    <p className="text-xs text-foreground/55 leading-relaxed">{feat.desc}</p>
                   </div>
                 </motion.div>
               ))}
@@ -126,7 +126,7 @@ export default function CoachingSection() {
                 >
                   <div className="text-5xl mb-4">🎉</div>
                   <h3 className="text-2xl font-bold text-foreground mb-2">You&apos;re In!</h3>
-                  <p className="text-foreground/40 text-sm max-w-xs mx-auto">
+                  <p className="text-foreground/60 text-sm max-w-xs mx-auto">
                     Thanks for your interest! We&apos;ll notify you as soon as ChessMazes coaching 
                     is ready. Get ready to level up your chess.
                   </p>
@@ -142,7 +142,7 @@ export default function CoachingSection() {
                   <h3 className="text-xl font-bold text-foreground mb-1 relative">
                     Get Early Access
                   </h3>
-                  <p className="text-sm text-foreground/35 mb-6">
+                  <p className="text-sm text-foreground/55 mb-6">
                     Be the first to experience AI-powered chess coaching.
                   </p>
 
@@ -153,7 +153,7 @@ export default function CoachingSection() {
                     
                     {/* Name */}
                     <div>
-                      <label htmlFor="name" className="block text-xs font-medium text-foreground/50 mb-1.5">
+                      <label htmlFor="name" className="block text-xs font-medium text-foreground/70 mb-1.5">
                         Full Name
                       </label>
                       <input
@@ -168,7 +168,7 @@ export default function CoachingSection() {
 
                     {/* Email */}
                     <div>
-                      <label htmlFor="email" className="block text-xs font-medium text-foreground/50 mb-1.5">
+                      <label htmlFor="email" className="block text-xs font-medium text-foreground/70 mb-1.5">
                         Email Address
                       </label>
                       <input
@@ -183,7 +183,7 @@ export default function CoachingSection() {
 
                     {/* Role */}
                     <div>
-                      <label htmlFor="role" className="block text-xs font-medium text-foreground/50 mb-1.5">
+                      <label htmlFor="role" className="block text-xs font-medium text-foreground/70 mb-1.5">
                         I am a...
                       </label>
                       <select
@@ -199,8 +199,8 @@ export default function CoachingSection() {
 
                     {/* Message */}
                     <div>
-                      <label htmlFor="message" className="block text-xs font-medium text-foreground/50 mb-1.5">
-                        What excites you most? <span className="text-foreground/20">(optional)</span>
+                      <label htmlFor="message" className="block text-xs font-medium text-foreground/70 mb-1.5">
+                        What excites you most? <span className="text-foreground/40">(optional)</span>
                       </label>
                       <textarea
                         id="message"
@@ -233,7 +233,7 @@ export default function CoachingSection() {
                       <p className="text-xs text-rose text-center font-medium">Error. Please try again.</p>
                     )}
 
-                    <p className="text-[11px] text-foreground/20 text-center">
+                    <p className="text-[11px] text-foreground/40 text-center">
                       No spam. We&apos;ll only email you when it&apos;s ready.
                     </p>
                   </form>

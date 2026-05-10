@@ -44,7 +44,7 @@ export default function CoreValues() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
             A Smarter Way to <span className="gradient-text">Improve</span>
           </h2>
-          <p className="text-foreground/40 text-lg max-w-2xl mx-auto">
+          <p className="text-foreground/60 text-lg max-w-2xl mx-auto">
             Stop wasting time on generic training. ChessMazes builds a complete picture of your chess weaknesses and fixes them systematically.
           </p>
         </motion.div>
@@ -64,7 +64,7 @@ export default function CoreValues() {
                   {item.icon}
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-foreground">{item.title}</h3>
-                <p className="text-foreground/40 leading-relaxed group-hover:text-foreground/55 transition-colors duration-300">{item.description}</p>
+                <p className="text-foreground/60 leading-relaxed group-hover:text-foreground/75 transition-colors duration-300">{item.description}</p>
               </div>
             </motion.div>
           ))}

@@ -56,7 +56,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="text-lg sm:text-xl text-foreground/50 max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed"
+              className="text-lg sm:text-xl text-foreground/70 max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed"
             >
               ChessMazes turns your real game mistakes into personalized training
               and tracks your improvement over time.
@@ -100,7 +100,7 @@ export default function Hero() {
                   </div>
                 ))}
               </div>
-              <div className="text-sm text-foreground/40">
+              <div className="text-sm text-foreground/60">
                 <span className="text-foreground/70 font-medium">2,000+</span> on the waitlist
               </div>
             </motion.div>

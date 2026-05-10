@@ -46,7 +46,7 @@ export default function AboutPage() {
             ].map((stat) => (
               <div key={stat.label}>
                 <div className="text-3xl font-bold text-foreground mb-1">{stat.value}</div>
-                <div className="text-sm text-foreground/30 uppercase tracking-widest">{stat.label}</div>
+                <div className="text-sm text-foreground/50 uppercase tracking-widest">{stat.label}</div>
               </div>
             ))}
           </div>

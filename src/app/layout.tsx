@@ -12,6 +12,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://chessmazes.com"),
   title: "ChessMazes — AI Chess Improvement Coach | Fix Your Mistakes, Improve Daily",
   description:
     "ChessMazes is a structured chess improvement platform that analyzes real games, detects recurring weaknesses, assigns personalized training, and tracks improvement over time.",
@@ -30,12 +31,22 @@ export const metadata: Metadata = {
       "Turn your real game mistakes into personalized training plans. AI-powered weakness detection and structured improvement.",
     type: "website",
     siteName: "ChessMazes",
+    url: "https://chessmazes.com",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "ChessMazes — AI Chess Improvement Coach",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "ChessMazes — AI Chess Improvement Coach",
     description:
       "Turn your real game mistakes into personalized training plans.",
+    images: ["/logo.png"],
   },
 };
 

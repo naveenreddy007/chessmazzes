@@ -63,7 +63,7 @@ export default function FinalCTA() {
             <span className="gradient-text">Improvement Journey</span>
           </h2>
 
-          <p className="text-lg text-foreground/50 max-w-2xl mx-auto mb-12 leading-relaxed">
+          <p className="text-lg text-foreground/70 max-w-2xl mx-auto mb-12 leading-relaxed">
             We&apos;re building the ultimate AI chess coaching platform.
             Join the waitlist and be the first to experience the future of chess training.
           </p>
@@ -77,10 +77,10 @@ export default function FinalCTA() {
               >
                 <div className="text-4xl mb-4">♟</div>
                 <h3 className="text-2xl font-bold text-foreground mb-2">Checkmate!</h3>
-                <p className="text-foreground/40 mb-6">You&apos;re officially on the list. We&apos;ll notify you at launch.</p>
+                <p className="text-foreground/60 mb-6">You&apos;re officially on the list. We&apos;ll notify you at launch.</p>
                 <button
                   onClick={() => setStatus("idle")}
-                  className="text-xs text-foreground/30 uppercase tracking-widest hover:text-foreground transition-colors"
+                  className="text-xs text-foreground/50 uppercase tracking-widest hover:text-foreground transition-colors"
                 >
                   Register Another Email
                 </button>
@@ -121,7 +121,7 @@ export default function FinalCTA() {
             )}
           </div>
 
-          <p className="mt-8 text-[10px] text-foreground/20 uppercase tracking-[0.2em] font-medium">
+          <p className="mt-8 text-[10px] text-foreground/40 uppercase tracking-[0.2em] font-medium">
             Join 500+ chess players already on the list
           </p>
         </motion.div>

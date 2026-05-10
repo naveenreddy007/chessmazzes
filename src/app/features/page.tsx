@@ -34,7 +34,7 @@ export default function FeaturesPage() {
             Everything You Need to{" "}
             <span className="gradient-text">Level Up</span>
           </h1>
-          <p className="text-xl text-foreground/40 max-w-2xl mx-auto leading-relaxed mb-10">
+          <p className="text-xl text-foreground/60 max-w-2xl mx-auto leading-relaxed mb-10">
             A complete chess improvement ecosystem powered by artificial intelligence. 
             Every tool is designed to find, fix, and track your weaknesses.
           </p>
@@ -48,7 +48,7 @@ export default function FeaturesPage() {
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="text-2xl sm:text-3xl font-bold gradient-text">{stat.value}</div>
-                <div className="text-xs text-foreground/30 mt-1">{stat.label}</div>
+                <div className="text-xs text-foreground/50 mt-1">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -69,14 +69,14 @@ export default function FeaturesPage() {
               <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
                 Stockfish-Powered <span className="gradient-text">Engine Analysis</span>
               </h2>
-              <p className="text-foreground/40 leading-relaxed mb-6">
+              <p className="text-foreground/60 leading-relaxed mb-6">
                 Every game you play or upload is analyzed by one of the strongest chess engines in the world. 
                 We don&apos;t just tell you the best move — we categorize your mistakes into tactical, 
                 positional, and endgame errors so you know exactly what to work on.
               </p>
               <ul className="space-y-3">
                 {["Move-by-move evaluation", "Mistake categorization (tactical, positional, endgame)", "Best move suggestions with explanations", "Accuracy percentage per game"].map((item) => (
-                  <li key={item} className="flex items-center gap-2 text-sm text-foreground/50">
+                  <li key={item} className="flex items-center gap-2 text-sm text-foreground/70">
                     <span className="text-emerald">✓</span>
                     {item}
                   </li>
@@ -92,7 +92,7 @@ export default function FeaturesPage() {
                 </div>
                 <div className="bg-foreground/[0.03] rounded-xl p-4 border border-foreground/5">
                   <div className="flex justify-between mb-2">
-                    <span className="text-xs text-foreground/30">Accuracy</span>
+                    <span className="text-xs text-foreground/50">Accuracy</span>
                     <span className="text-sm font-bold text-emerald">78.4%</span>
                   </div>
                   <div className="h-2 bg-foreground/5 rounded-full overflow-hidden">
@@ -107,7 +107,7 @@ export default function FeaturesPage() {
                   ].map((stat) => (
                     <div key={stat.label} className="bg-foreground/[0.03] rounded-lg p-3 border border-foreground/5 text-center">
                       <div className={`text-lg font-bold ${stat.color}`}>{stat.value}</div>
-                      <div className="text-[10px] text-foreground/30">{stat.label}</div>
+                      <div className="text-[10px] text-foreground/50">{stat.label}</div>
                     </div>
                   ))}
                 </div>
@@ -132,8 +132,8 @@ export default function FeaturesPage() {
                 ].map((weakness) => (
                   <div key={weakness.name} className="bg-foreground/[0.03] rounded-xl p-3 border border-foreground/5">
                     <div className="flex justify-between mb-1.5">
-                      <span className="text-xs text-foreground/50">{weakness.name}</span>
-                      <span className="text-xs text-foreground/30">{weakness.severity}%</span>
+                      <span className="text-xs text-foreground/70">{weakness.name}</span>
+                      <span className="text-xs text-foreground/50">{weakness.severity}%</span>
                     </div>
                     <div className="h-1.5 bg-foreground/5 rounded-full overflow-hidden">
                       <div className={`h-full rounded-full bg-gradient-to-r ${weakness.color}`} style={{ width: `${weakness.severity}%` }} />
@@ -147,14 +147,14 @@ export default function FeaturesPage() {
               <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
                 Your Personal <span className="gradient-text">Weakness Map</span>
               </h2>
-              <p className="text-foreground/40 leading-relaxed mb-6">
+              <p className="text-foreground/60 leading-relaxed mb-6">
                 ChessMazes doesn&apos;t just analyze one game — it looks across all your games to find 
                 patterns. If you keep missing knight forks or struggling with rook endgames, 
                 we&apos;ll know and build training around it.
               </p>
               <ul className="space-y-3">
                 {["Cross-game pattern analysis", "Persistent weakness memory", "Severity scoring for each weakness", "Automatic re-evaluation as you improve"].map((item) => (
-                  <li key={item} className="flex items-center gap-2 text-sm text-foreground/50">
+                  <li key={item} className="flex items-center gap-2 text-sm text-foreground/70">
                     <span className="text-emerald">✓</span>
                     {item}
                   </li>

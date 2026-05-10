@@ -51,7 +51,7 @@ export default function Pricing() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
             Choose Your <span className="gradient-text">Plan</span>
           </h2>
-          <p className="text-foreground/40 text-lg max-w-2xl mx-auto">
+          <p className="text-foreground/60 text-lg max-w-2xl mx-auto">
             Start free and upgrade as you grow. All plans include core AI analysis features.
           </p>
         </motion.div>
@@ -79,7 +79,7 @@ export default function Pricing() {
             <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-3 relative">
               We&apos;re Building Something <span className="gradient-text">Special</span>
             </h3>
-            <p className="text-foreground/40 text-sm sm:text-base leading-relaxed mb-8 max-w-lg mx-auto">
+            <p className="text-foreground/60 text-sm sm:text-base leading-relaxed mb-8 max-w-lg mx-auto">
               Our AI chess coaching platform is under active development.
               Be the first to know when we launch — get early access and exclusive early-bird updates.
             </p>
@@ -93,10 +93,10 @@ export default function Pricing() {
               >
                 <div className="text-2xl mb-2">🎉</div>
                 <p className="text-foreground font-semibold mb-1">You&apos;re on the list!</p>
-                <p className="text-foreground/35 text-sm">We&apos;ll notify you as soon as we launch.</p>
+                <p className="text-foreground/55 text-sm">We&apos;ll notify you as soon as we launch.</p>
                 <button
                   onClick={() => setStatus("idle")}
-                  className="mt-4 text-[10px] text-foreground/30 uppercase tracking-widest hover:text-foreground transition-colors"
+                  className="mt-4 text-[10px] text-foreground/50 uppercase tracking-widest hover:text-foreground transition-colors"
                 >
                   Join with another email
                 </button>

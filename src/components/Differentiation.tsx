@@ -30,7 +30,7 @@ export default function Differentiation() {
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
             Why <span className="gradient-text">ChessMazes</span>?
           </h2>
-          <p className="text-foreground/40 text-lg max-w-2xl mx-auto">
+          <p className="text-foreground/60 text-lg max-w-2xl mx-auto">
             Traditional tools give you engine analysis. We give you a path to improvement.
           </p>
         </motion.div>

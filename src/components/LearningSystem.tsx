@@ -44,7 +44,7 @@ export default function LearningSystem() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
             Structured <span className="gradient-text">Progression</span>
           </h2>
-          <p className="text-foreground/40 text-lg max-w-2xl mx-auto">
+          <p className="text-foreground/60 text-lg max-w-2xl mx-auto">
             No matter your level, ChessMazes adapts to challenge you with the right training.
           </p>
         </motion.div>
@@ -66,7 +66,7 @@ export default function LearningSystem() {
           </div>
           <div className="flex justify-between max-w-2xl mx-auto mt-3">
             {levels.map((l) => (
-              <span key={l.level} className="text-xs text-foreground/30 font-medium">{l.level}</span>
+              <span key={l.level} className="text-xs text-foreground/50 font-medium">{l.level}</span>
             ))}
           </div>
         </motion.div>
@@ -90,13 +90,13 @@ export default function LearningSystem() {
                   </div>
                   <div>
                     <h3 className="font-bold text-foreground">{level.level}</h3>
-                    <span className="text-xs text-foreground/30">{level.rating} ELO</span>
+                    <span className="text-xs text-foreground/50">{level.rating} ELO</span>
                   </div>
                 </div>
 
                 <ul className="space-y-3">
                   {level.modules.map((mod) => (
-                    <li key={mod} className="flex items-center gap-2 text-sm text-foreground/50 group-hover:text-foreground/65 transition-colors">
+                    <li key={mod} className="flex items-center gap-2 text-sm text-foreground/70 group-hover:text-foreground/65 transition-colors">
                       <span className={`w-1.5 h-1.5 rounded-full bg-gradient-to-r ${level.color}`} />
                       {mod}
                     </li>

@@ -502,10 +502,16 @@ export default function AcademyDashboardDemo() {
               />
             </div>
             
-            <button className="relative text-white/60 hover:text-white transition-colors p-2 hover:bg-white/5 rounded-full">
-              <Bell size={20} />
-              <span className="absolute top-1 right-1 w-2.5 h-2.5 bg-red-500 rounded-full shadow-[0_0_8px_rgba(239,68,68,0.8)] border-2 border-[#0a0e1a]"></span>
-            </button>
+            <div className="flex items-center gap-4">
+              <button className="relative text-white/60 hover:text-white transition-colors p-2 hover:bg-white/5 rounded-full">
+                <Bell size={20} />
+                <span className="absolute top-1 right-1 w-2.5 h-2.5 bg-red-500 rounded-full shadow-[0_0_8px_rgba(239,68,68,0.8)] border-2 border-[#0a0e1a]"></span>
+              </button>
+              
+              <a href="https://www.chessmazes.org/contact" target="_blank" rel="noreferrer" className="px-4 py-2 bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-500 hover:to-violet-500 text-white rounded-full text-sm font-bold shadow-[0_0_15px_rgba(139,92,246,0.3)] transition-all transform hover:scale-105 whitespace-nowrap">
+                Join Waitlist
+              </a>
+            </div>
             
             <div className="flex items-center gap-3 pl-6 border-l border-white/10 cursor-pointer group">
               <div className="w-10 h-10 rounded-full bg-white/10 overflow-hidden border border-white/20 group-hover:border-blue-400 transition-colors">
@@ -529,17 +535,88 @@ export default function AcademyDashboardDemo() {
             {activeTab === "dashboard" && <DashboardView key="dashboard" />}
             {activeTab === "students" && <StudentsView key="students" />}
             {activeTab === "curriculum" && (
-               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex flex-col items-center justify-center h-full text-white/40">
-                 <BookOpen size={64} className="mb-4 opacity-50" />
-                 <h2 className="text-2xl font-bold text-white mb-2">AI Curriculum Generator</h2>
-                 <p>Select students to auto-generate weekly training plans.</p>
+               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} className="flex flex-col h-full">
+                 <div className="flex justify-between items-center mb-8">
+                   <div>
+                     <h2 className="text-3xl font-bold text-white tracking-tight mb-2">AI Curriculum Generator</h2>
+                     <p className="text-white/50">Auto-generate weekly training plans based on detected weaknesses</p>
+                   </div>
+                   <button className="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-xl shadow-lg shadow-blue-500/20 transition-all text-sm font-medium flex items-center gap-2">
+                     <Settings size={16} /> Configure Rules
+                   </button>
+                 </div>
+                 
+                 <div className="grid grid-cols-12 gap-6">
+                   <div className="col-span-4 bg-white/[0.03] border border-white/10 rounded-2xl p-6">
+                     <h3 className="font-semibold text-lg text-white mb-4">Focus Areas (This Week)</h3>
+                     <div className="space-y-4">
+                       <div className="p-4 rounded-xl border border-blue-500/30 bg-blue-500/5">
+                         <div className="flex justify-between items-center mb-2">
+                           <h4 className="font-medium text-blue-400">Endgame Mastery</h4>
+                           <span className="text-xs bg-blue-500/20 text-blue-300 px-2 py-1 rounded-md">Priority</span>
+                         </div>
+                         <p className="text-sm text-white/60 mb-3">Focus on pawn structures and opposition. 45 students affected.</p>
+                         <button className="w-full py-2 bg-blue-600/20 hover:bg-blue-600/40 text-blue-300 text-sm rounded-lg transition-colors">View Assigned Puzzles</button>
+                       </div>
+                       
+                       <div className="p-4 rounded-xl border border-white/10 bg-white/5">
+                         <div className="flex justify-between items-center mb-2">
+                           <h4 className="font-medium text-white/80">Opening Traps</h4>
+                           <span className="text-xs bg-white/10 text-white/50 px-2 py-1 rounded-md">Secondary</span>
+                         </div>
+                         <p className="text-sm text-white/60 mb-3">Sicilian defense common pitfalls. 28 students affected.</p>
+                         <button className="w-full py-2 bg-white/10 hover:bg-white/20 text-white/80 text-sm rounded-lg transition-colors">View Assigned Puzzles</button>
+                       </div>
+                     </div>
+                   </div>
+                   
+                   <div className="col-span-8 bg-white/[0.03] border border-white/10 rounded-2xl p-6">
+                     <h3 className="font-semibold text-lg text-white mb-4">Generate Custom Plan</h3>
+                     <div className="grid grid-cols-2 gap-4 mb-6">
+                       <div className="p-4 rounded-xl border border-white/10 bg-white/5 cursor-pointer hover:border-blue-500/50 transition-colors">
+                         <Target className="text-blue-400 mb-2" size={24} />
+                         <h4 className="font-medium text-white">Target Weakness</h4>
+                         <p className="text-xs text-white/50 mt-1">Select specific tactics to drill</p>
+                       </div>
+                       <div className="p-4 rounded-xl border border-white/10 bg-white/5 cursor-pointer hover:border-purple-500/50 transition-colors">
+                         <TrendingUp className="text-purple-400 mb-2" size={24} />
+                         <h4 className="font-medium text-white">Elo Push</h4>
+                         <p className="text-xs text-white/50 mt-1">Intense calculation training</p>
+                       </div>
+                     </div>
+                     <div className="h-40 border border-dashed border-white/20 rounded-xl flex items-center justify-center bg-white/[0.02]">
+                       <p className="text-white/40 text-sm">Select a module above to configure lesson parameters</p>
+                     </div>
+                   </div>
+                 </div>
                </motion.div>
             )}
             {activeTab === "reports" && (
-               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex flex-col items-center justify-center h-full text-white/40">
-                 <TrendingUp size={64} className="mb-4 opacity-50" />
-                 <h2 className="text-2xl font-bold text-white mb-2">Detailed Analytics</h2>
-                 <p>In-depth Elo progression and tactical reports.</p>
+               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} className="flex flex-col h-full">
+                 <div className="flex justify-between items-center mb-8">
+                   <div>
+                     <h2 className="text-3xl font-bold text-white tracking-tight mb-2">Detailed Analytics</h2>
+                     <p className="text-white/50">Comprehensive breakdown of academy performance</p>
+                   </div>
+                   <button className="px-4 py-2 bg-white/10 hover:bg-white/20 text-white rounded-xl transition-all text-sm font-medium flex items-center gap-2">
+                     <Download size={16} /> Download PDF
+                   </button>
+                 </div>
+                 
+                 <div className="grid grid-cols-3 gap-6">
+                   <div className="bg-white/[0.03] border border-white/10 rounded-2xl p-6 flex flex-col items-center justify-center h-48">
+                     <span className="text-5xl font-bold text-white mb-2">92%</span>
+                     <span className="text-sm text-white/50">Lesson Completion Rate</span>
+                   </div>
+                   <div className="bg-white/[0.03] border border-white/10 rounded-2xl p-6 flex flex-col items-center justify-center h-48">
+                     <span className="text-5xl font-bold text-emerald-400 mb-2">+124</span>
+                     <span className="text-sm text-white/50">Total Elo Gained (This Month)</span>
+                   </div>
+                   <div className="bg-white/[0.03] border border-white/10 rounded-2xl p-6 flex flex-col items-center justify-center h-48">
+                     <span className="text-5xl font-bold text-blue-400 mb-2">14.2h</span>
+                     <span className="text-sm text-white/50">Avg. Weekly Training Time</span>
+                   </div>
+                 </div>
                </motion.div>
             )}
           </AnimatePresence>

@@ -13,7 +13,10 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://chessmazes.com"),
-  title: "ChessMazes — AI Chess Improvement Coach | Fix Your Mistakes, Improve Daily",
+  title: {
+    default: "ChessMazes — AI Chess Improvement Coach | Fix Your Mistakes, Improve Daily",
+    template: "%s | ChessMazes",
+  },
   description:
     "ChessMazes is a structured chess improvement platform that analyzes real games, detects recurring weaknesses, assigns personalized training, and tracks improvement over time.",
   keywords: [
@@ -24,7 +27,18 @@ export const metadata: Metadata = {
     "weakness detection",
     "chess analysis",
     "personalized chess training",
+    "chess tactics",
+    "chess strategy",
+    "chess ELO improvement",
   ],
+  authors: [{ name: "ChessMazes", url: "https://chessmazes.com" }],
+  creator: "ChessMazes",
+  publisher: "ChessMazes",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
   openGraph: {
     title: "ChessMazes — Fix Your Chess Mistakes. Improve Every Day.",
     description:
@@ -32,21 +46,31 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "ChessMazes",
     url: "https://chessmazes.com",
+    locale: "en_US",
     images: [
       {
-        url: "/logo.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "ChessMazes — AI Chess Improvement Coach",
+        alt: "ChessMazes — AI-Powered Chess Improvement Platform",
+        type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ChessMazes — AI Chess Improvement Coach",
+    title: "ChessMazes — Fix Your Chess Mistakes. Improve Every Day.",
     description:
-      "Turn your real game mistakes into personalized training plans.",
-    images: ["/logo.png"],
+      "Turn your real game mistakes into personalized training plans. AI-powered weakness detection and structured improvement.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "ChessMazes — AI-Powered Chess Improvement Platform",
+      },
+    ],
+    creator: "@chessmazes",
   },
 };
 

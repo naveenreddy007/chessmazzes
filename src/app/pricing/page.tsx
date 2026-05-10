@@ -4,9 +4,20 @@ import Pricing from "@/components/Pricing";
 import FinalCTA from "@/components/FinalCTA";
 
 export const metadata: Metadata = {
-  title: "Pricing — ChessMazes | Plans for Every Player",
+  title: "Pricing — Plans for Every Player",
   description:
     "Choose the ChessMazes plan that fits your chess improvement goals. Free, Basic, Standard, Pro, and Elite plans available.",
+  openGraph: {
+    title: "ChessMazes Pricing — AI Chess Coaching for Every Budget",
+    description: "From free to elite — find the perfect plan for your chess improvement journey. Cancel anytime, early-bird discounts available.",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "ChessMazes Pricing" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ChessMazes Pricing — AI Chess Coaching for Every Budget",
+    description: "From free to elite — find the perfect plan for your chess improvement journey.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function PricingPage() {

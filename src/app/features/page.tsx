@@ -2,9 +2,20 @@ import type { Metadata } from "next";
 import Features from "@/components/Features";
 
 export const metadata: Metadata = {
-  title: "Features — ChessMazes | AI-Powered Chess Training Tools",
+  title: "Features — AI-Powered Chess Training Tools",
   description:
     "Explore ChessMazes features: AI Game Analysis, Weakness Detection Engine, Personalized Puzzle Training, Daily Training Plans, and Progress Dashboard.",
+  openGraph: {
+    title: "ChessMazes Features — AI Game Analysis & Weakness Detection",
+    description: "Stockfish-powered engine analysis, cross-game weakness mapping, and personalized daily training — all in one platform.",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "ChessMazes Features" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ChessMazes Features — AI Game Analysis & Weakness Detection",
+    description: "Stockfish-powered engine analysis, cross-game weakness mapping, and personalized daily training.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function FeaturesPage() {

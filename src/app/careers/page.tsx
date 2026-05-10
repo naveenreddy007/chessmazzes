@@ -1,8 +1,19 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Careers — ChessMazes | Join the Team",
+  title: "Careers — Join the Team",
   description: "Join us in building the future of chess training. We're looking for passionate developers and chess enthusiasts.",
+  openGraph: {
+    title: "Careers at ChessMazes — Build the Future of Chess",
+    description: "Remote-first team of AI, game theory, and product experts. If you love chess and building great products, join us.",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Careers at ChessMazes" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Careers at ChessMazes — Build the Future of Chess",
+    description: "Remote-first team of AI, game theory, and product experts. Join us.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function CareersPage() {

@@ -1,8 +1,19 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us — ChessMazes | Our Mission",
+  title: "About Us — Our Mission",
   description: "Learn about the mission behind ChessMazes: making high-level chess coaching accessible to everyone through AI.",
+  openGraph: {
+    title: "About ChessMazes — Democratizing Elite Chess Training",
+    description: "Born from a simple frustration: chess coaching is expensive and generic apps don't work. We built an AI that coaches like a human.",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "About ChessMazes" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About ChessMazes — Democratizing Elite Chess Training",
+    description: "Born from a simple frustration: chess coaching is expensive and generic apps don't work.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function AboutPage() {

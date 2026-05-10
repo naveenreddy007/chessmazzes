@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — ChessMazes | Usage Guidelines",
+  title: "Terms of Service — Usage Guidelines",
   description: "The official terms of service for using the ChessMazes platform and AI coaching services.",
+  openGraph: {
+    title: "ChessMazes Terms of Service",
+    description: "Read our terms of service for using the ChessMazes AI chess coaching platform.",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "ChessMazes Terms of Service" }],
+  },
 };
 
 export default function TermsPage() {

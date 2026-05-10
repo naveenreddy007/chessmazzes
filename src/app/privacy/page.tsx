@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — ChessMazes | Your Data Security",
+  title: "Privacy Policy — Your Data Security",
   description: "Learn how ChessMazes handles and protects your chess game data and personal information.",
+  openGraph: {
+    title: "ChessMazes Privacy Policy — Your Data is Safe",
+    description: "We take your privacy seriously. Learn how we collect, use, and protect your chess data and personal information.",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "ChessMazes Privacy Policy" }],
+  },
 };
 
 export default function PrivacyPage() {

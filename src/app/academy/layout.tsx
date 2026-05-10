@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ChessMazes Academy — AI Training for Chess Schools",
     description: "Manage 5 or 500 students with powerful dashboards, AI-driven training, and detailed progress tracking. 98% satisfaction rate.",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "ChessMazes Academy" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "ChessMazes Academy" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "ChessMazes Academy — AI Training for Chess Schools",
     description: "Manage 5 or 500 students with powerful dashboards and AI-driven training.",
-    images: ["/og-image.png"],
+    images: ["/og-image.jpg"],
   },
 };
 

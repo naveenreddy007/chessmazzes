@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ChessMazes Terms of Service",
     description: "Read our terms of service for using the ChessMazes AI chess coaching platform.",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "ChessMazes Terms of Service" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "ChessMazes Terms of Service" }],
   },
 };
 

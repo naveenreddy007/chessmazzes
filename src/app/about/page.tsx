@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About ChessMazes — Democratizing Elite Chess Training",
     description: "Born from a simple frustration: chess coaching is expensive and generic apps don't work. We built an AI that coaches like a human.",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "About ChessMazes" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "About ChessMazes" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "About ChessMazes — Democratizing Elite Chess Training",
     description: "Born from a simple frustration: chess coaching is expensive and generic apps don't work.",
-    images: ["/og-image.png"],
+    images: ["/og-image.jpg"],
   },
 };
 

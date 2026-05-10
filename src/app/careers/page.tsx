@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Careers at ChessMazes — Build the Future of Chess",
     description: "Remote-first team of AI, game theory, and product experts. If you love chess and building great products, join us.",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Careers at ChessMazes" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Careers at ChessMazes" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Careers at ChessMazes — Build the Future of Chess",
     description: "Remote-first team of AI, game theory, and product experts. Join us.",
-    images: ["/og-image.png"],
+    images: ["/og-image.jpg"],
   },
 };
 

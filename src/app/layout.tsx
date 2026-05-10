@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://chessmazes.org"),
+  metadataBase: new URL("https://www.chessmazes.org"),
   title: {
     default: "ChessMazes — AI Chess Improvement Coach | Fix Your Mistakes, Improve Daily",
     template: "%s | ChessMazes",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "chess strategy",
     "chess ELO improvement",
   ],
-  authors: [{ name: "ChessMazes", url: "https://chessmazes.org" }],
+  authors: [{ name: "ChessMazes", url: "https://www.chessmazes.org" }],
   creator: "ChessMazes",
   publisher: "ChessMazes",
   robots: {
@@ -46,15 +46,15 @@ export const metadata: Metadata = {
       "Turn your real game mistakes into personalized training plans. AI-powered weakness detection and structured improvement.",
     type: "website",
     siteName: "ChessMazes",
-    url: "https://chessmazes.org",
+    url: "https://www.chessmazes.org",
     locale: "en_US",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "ChessMazes — AI-Powered Chess Improvement Platform",
-        type: "image/png",
+        type: "image/jpeg",
       },
     ],
   },
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
       "Turn your real game mistakes into personalized training plans. AI-powered weakness detection and structured improvement.",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "ChessMazes — AI-Powered Chess Improvement Platform",

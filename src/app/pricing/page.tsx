@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ChessMazes Pricing — AI Chess Coaching for Every Budget",
     description: "From free to elite — find the perfect plan for your chess improvement journey. Cancel anytime, early-bird discounts available.",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "ChessMazes Pricing" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "ChessMazes Pricing" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "ChessMazes Pricing — AI Chess Coaching for Every Budget",
     description: "From free to elite — find the perfect plan for your chess improvement journey.",
-    images: ["/og-image.png"],
+    images: ["/og-image.jpg"],
   },
 };
 

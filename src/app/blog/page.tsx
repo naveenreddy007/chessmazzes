@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ChessMazes Blog — Chess Improvement Insights & Strategy",
     description: "Expert articles on AI-powered chess coaching, tactical improvement, and training strategies for every level.",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "ChessMazes Blog" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "ChessMazes Blog" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "ChessMazes Blog — Chess Improvement Insights & Strategy",
     description: "Expert articles on AI-powered chess coaching, tactical improvement, and training strategies.",
-    images: ["/og-image.png"],
+    images: ["/og-image.jpg"],
   },
 };
 

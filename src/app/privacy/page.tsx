@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ChessMazes Privacy Policy — Your Data is Safe",
     description: "We take your privacy seriously. Learn how we collect, use, and protect your chess data and personal information.",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "ChessMazes Privacy Policy" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "ChessMazes Privacy Policy" }],
   },
 };
 

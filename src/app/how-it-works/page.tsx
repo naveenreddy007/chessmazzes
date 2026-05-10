@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "How ChessMazes Works — 5-Step Improvement Loop",
     description: "Upload games → AI analyzes → Detects weakness patterns → Assigns daily training → Tracks improvement. A proven system.",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "How ChessMazes Works" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "How ChessMazes Works" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "How ChessMazes Works — 5-Step Improvement Loop",
     description: "Upload games → AI analyzes → Detects weakness patterns → Assigns daily training → Tracks improvement.",
-    images: ["/og-image.png"],
+    images: ["/og-image.jpg"],
   },
 };
 

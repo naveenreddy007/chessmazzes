@@ -86,10 +86,10 @@ export default function AcademyDashboardDemo() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
-      className="grid grid-cols-12 gap-6 max-w-[1600px] mx-auto w-full pb-10"
+      className="grid grid-cols-1 lg:grid-cols-12 gap-6 max-w-[1600px] mx-auto w-full pb-10"
     >
       {/* Top Stat Cards */}
-      <div className="col-span-12 grid grid-cols-4 gap-6 mb-2">
+      <div className="col-span-1 lg:col-span-12 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mb-2">
         <div className="bg-white/[0.03] border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-white/[0.05] transition-colors relative overflow-hidden group">
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-blue-400 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
           <div className="flex justify-between items-start">
@@ -146,7 +146,7 @@ export default function AcademyDashboardDemo() {
       </div>
 
       {/* Real Recharts Performance Graph */}
-      <div className="col-span-8 bg-white/[0.03] border border-white/10 rounded-2xl p-6 flex flex-col relative overflow-hidden shadow-2xl shadow-black/50">
+      <div className="col-span-1 lg:col-span-12 xl:col-span-8 bg-white/[0.03] border border-white/10 rounded-2xl p-6 flex flex-col relative overflow-hidden shadow-2xl shadow-black/50">
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/5 rounded-full blur-[120px] pointer-events-none"></div>
 
         <div className="flex justify-between items-center mb-6 relative z-10">
@@ -184,7 +184,7 @@ export default function AcademyDashboardDemo() {
       </div>
 
       {/* Tactical Weaknesses Real Donut Chart */}
-      <div className="col-span-4 bg-white/[0.03] border border-white/10 rounded-2xl p-6 flex flex-col">
+      <div className="col-span-1 lg:col-span-12 xl:col-span-4 bg-white/[0.03] border border-white/10 rounded-2xl p-6 flex flex-col">
         <div className="flex justify-between items-center mb-2">
           <div>
             <h3 className="font-semibold text-lg text-white">Aggregated Weaknesses</h3>
@@ -235,7 +235,7 @@ export default function AcademyDashboardDemo() {
       </div>
 
       {/* Upcoming Events & Schedule */}
-      <div className="col-span-4 bg-white/[0.03] border border-white/10 rounded-2xl p-6">
+      <div className="col-span-1 lg:col-span-12 xl:col-span-4 bg-white/[0.03] border border-white/10 rounded-2xl p-6">
         <div className="flex justify-between items-center mb-6">
           <h3 className="font-semibold text-lg text-white">Upcoming Classes</h3>
           <button className="p-2 hover:bg-white/10 rounded-lg transition-colors">
@@ -257,15 +257,15 @@ export default function AcademyDashboardDemo() {
       </div>
 
       {/* Student List Snapshot */}
-      <div className="col-span-8 bg-white/[0.03] border border-white/10 rounded-2xl overflow-hidden flex flex-col">
-        <div className="p-6 border-b border-white/5 flex justify-between items-center bg-white/[0.01]">
+      <div className="col-span-1 lg:col-span-12 xl:col-span-8 bg-white/[0.03] border border-white/10 rounded-2xl overflow-hidden flex flex-col">
+        <div className="p-4 sm:p-6 border-b border-white/5 flex flex-col sm:flex-row justify-between items-start sm:items-center bg-white/[0.01] gap-4">
           <div>
             <h3 className="font-semibold text-lg text-white">Recent Student Activity</h3>
             <p className="text-sm text-white/50">Tracking top movers and at-risk players</p>
           </div>
           <button 
             onClick={() => setActiveTab("students")}
-            className="text-blue-400 hover:text-blue-300 text-sm font-medium flex items-center bg-blue-500/10 px-4 py-2 rounded-lg transition-colors"
+            className="text-blue-400 hover:text-blue-300 text-sm font-medium flex items-center bg-blue-500/10 px-4 py-2 rounded-lg transition-colors whitespace-nowrap"
           >
             View Directory <ChevronRight size={16} className="ml-1" />
           </button>
@@ -330,19 +330,19 @@ export default function AcademyDashboardDemo() {
       exit={{ opacity: 0, y: -20 }}
       className="w-full max-w-[1600px] mx-auto h-full flex flex-col pb-10"
     >
-      <div className="flex justify-between items-center mb-8">
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
         <div>
-          <h2 className="text-3xl font-bold text-white tracking-tight mb-2">Student Directory</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-white tracking-tight mb-2">Student Directory</h2>
           <p className="text-white/50">Manage your academy's {students.length} active students</p>
         </div>
-        <div className="flex gap-3">
-          <button className="flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition-colors text-sm font-medium">
-            <Filter size={16} /> Filter
+        <div className="flex flex-wrap gap-3">
+          <button className="flex items-center gap-2 px-3 md:px-4 py-2 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition-colors text-xs md:text-sm font-medium">
+            <Filter size={16} /> <span className="hidden sm:inline">Filter</span>
           </button>
-          <button className="flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition-colors text-sm font-medium">
-            <Download size={16} /> Export
+          <button className="flex items-center gap-2 px-3 md:px-4 py-2 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition-colors text-xs md:text-sm font-medium">
+            <Download size={16} /> <span className="hidden sm:inline">Export</span>
           </button>
-          <button className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-xl shadow-lg shadow-blue-500/20 transition-all text-sm font-medium">
+          <button className="flex items-center gap-2 px-3 md:px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-xl shadow-lg shadow-blue-500/20 transition-all text-xs md:text-sm font-medium whitespace-nowrap">
             <Plus size={16} /> Add Student
           </button>
         </div>
@@ -433,22 +433,22 @@ export default function AcademyDashboardDemo() {
   );
 
   return (
-    <div className="fixed inset-0 z-[100] bg-[#06090f] text-[#e8ecf4] flex overflow-hidden font-sans">
+    <div className="min-h-screen z-[100] bg-[#06090f] text-[#e8ecf4] flex flex-col lg:flex-row overflow-hidden font-sans relative">
       
-      {/* Sidebar - Same as before but with active states wired up */}
-      <div className="w-64 border-r border-white/5 bg-[#0a0e1a]/80 backdrop-blur-xl flex flex-col h-full shrink-0">
-        <div className="h-20 flex items-center px-6 border-b border-white/5">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center mr-3 shadow-[0_0_20px_rgba(59,130,246,0.5)]">
-            <span className="text-white font-bold text-xl">C</span>
+      {/* Sidebar / Topbar */}
+      <div className="lg:w-64 border-b lg:border-b-0 lg:border-r border-white/5 bg-[#0a0e1a]/80 backdrop-blur-xl flex flex-col lg:h-screen shrink-0 sticky top-0 z-50">
+        <div className="h-16 lg:h-20 flex items-center px-4 lg:px-6 border-b border-white/5 shrink-0">
+          <div className="w-8 h-8 lg:w-10 lg:h-10 rounded-xl bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center mr-3 shadow-[0_0_20px_rgba(59,130,246,0.5)]">
+            <span className="text-white font-bold text-lg lg:text-xl">C</span>
           </div>
           <div>
-            <span className="font-bold text-lg tracking-tight block text-white">Coaches Hub</span>
-            <span className="text-xs text-white/50 font-medium">ChessMasters Academy</span>
+            <span className="font-bold text-base lg:text-lg tracking-tight block text-white leading-tight">Coaches Hub</span>
+            <span className="text-[10px] lg:text-xs text-white/50 font-medium">ChessMasters Academy</span>
           </div>
         </div>
 
-        <div className="p-4 flex-1 space-y-2 mt-4">
-          <div className="text-xs font-semibold text-white/30 uppercase tracking-widest mb-4 px-2">Main Menu</div>
+        <div className="p-2 lg:p-4 flex flex-row lg:flex-col overflow-x-auto lg:overflow-visible gap-2 lg:space-y-2 lg:mt-4 no-scrollbar">
+          <div className="hidden lg:block text-xs font-semibold text-white/30 uppercase tracking-widest mb-4 px-2">Main Menu</div>
           
           <button onClick={() => setActiveTab("dashboard")} className={`w-full flex items-center px-4 py-3 rounded-xl transition-all ${activeTab === 'dashboard' ? 'bg-blue-500/15 text-blue-400 shadow-inner border border-blue-500/20' : 'text-white/60 hover:bg-white/5 hover:text-white'}`}>
             <LayoutDashboard size={18} className="mr-3" />
@@ -486,14 +486,14 @@ export default function AcademyDashboardDemo() {
       <div className="flex-1 flex flex-col h-full bg-[#06090f] overflow-hidden">
         
         {/* Top Navbar */}
-        <header className="h-20 flex items-center justify-between px-10 border-b border-white/5 bg-[#0a0e1a]/50 backdrop-blur-md z-20 shrink-0">
+        <header className="h-20 flex items-center justify-between px-4 sm:px-10 border-b border-white/5 bg-[#0a0e1a]/50 backdrop-blur-md z-20 shrink-0">
           <div className="flex flex-col">
             <h1 className="text-xl font-bold tracking-tight text-white capitalize">{activeTab}</h1>
-            <p className="text-xs text-white/50">{new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</p>
+            <p className="text-xs text-white/50 hidden sm:block">{new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</p>
           </div>
           
-          <div className="flex items-center gap-6">
-            <div className="relative group">
+          <div className="flex items-center gap-3 sm:gap-6">
+            <div className="relative group hidden md:block">
               <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-white/40 group-focus-within:text-blue-400 transition-colors" />
               <input 
                 type="text" 
@@ -508,12 +508,12 @@ export default function AcademyDashboardDemo() {
                 <span className="absolute top-1 right-1 w-2.5 h-2.5 bg-red-500 rounded-full shadow-[0_0_8px_rgba(239,68,68,0.8)] border-2 border-[#0a0e1a]"></span>
               </button>
               
-              <a href="https://www.chessmazes.org/contact" target="_blank" rel="noreferrer" className="px-4 py-2 bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-500 hover:to-violet-500 text-white rounded-full text-sm font-bold shadow-[0_0_15px_rgba(139,92,246,0.3)] transition-all transform hover:scale-105 whitespace-nowrap">
+              <a href="https://www.chessmazes.org/contact" target="_blank" rel="noreferrer" className="px-3 sm:px-4 py-2 bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-500 hover:to-violet-500 text-white rounded-full text-xs sm:text-sm font-bold shadow-[0_0_15px_rgba(139,92,246,0.3)] transition-all transform hover:scale-105 whitespace-nowrap">
                 Join Waitlist
               </a>
             </div>
             
-            <div className="flex items-center gap-3 pl-6 border-l border-white/10 cursor-pointer group">
+            <div className="hidden sm:flex items-center gap-3 pl-6 border-l border-white/10 cursor-pointer group">
               <div className="w-10 h-10 rounded-full bg-white/10 overflow-hidden border border-white/20 group-hover:border-blue-400 transition-colors">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Alex&backgroundColor=b6e3f4" alt="Coach" className="w-full h-full object-cover" />
@@ -527,7 +527,7 @@ export default function AcademyDashboardDemo() {
         </header>
 
         {/* Dynamic Content Body */}
-        <main className="flex-1 overflow-y-auto p-10 relative">
+        <main className="flex-1 overflow-y-auto p-4 sm:p-10 relative">
           {/* Subtle background glow */}
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-blue-600/5 blur-[150px] pointer-events-none rounded-full"></div>
           
@@ -593,17 +593,17 @@ export default function AcademyDashboardDemo() {
             )}
             {activeTab === "reports" && (
                <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} className="flex flex-col h-full">
-                 <div className="flex justify-between items-center mb-8">
+                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4">
                    <div>
-                     <h2 className="text-3xl font-bold text-white tracking-tight mb-2">Detailed Analytics</h2>
+                     <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight mb-2">Detailed Analytics</h2>
                      <p className="text-white/50">Comprehensive breakdown of academy performance</p>
                    </div>
-                   <button className="px-4 py-2 bg-white/10 hover:bg-white/20 text-white rounded-xl transition-all text-sm font-medium flex items-center gap-2">
+                   <button className="w-full sm:w-auto px-4 py-2 bg-white/10 hover:bg-white/20 text-white rounded-xl transition-all text-sm font-medium flex items-center justify-center gap-2">
                      <Download size={16} /> Download PDF
                    </button>
                  </div>
                  
-                 <div className="grid grid-cols-3 gap-6">
+                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                    <div className="bg-white/[0.03] border border-white/10 rounded-2xl p-6 flex flex-col items-center justify-center h-48">
                      <span className="text-5xl font-bold text-white mb-2">92%</span>
                      <span className="text-sm text-white/50">Lesson Completion Rate</span>

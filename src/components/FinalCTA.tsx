@@ -52,9 +52,9 @@ export default function FinalCTA() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-foreground/10 bg-foreground/5 mb-8">
             <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-            <span className="text-xs font-medium text-white/70 tracking-wide uppercase">Early Access</span>
+            <span className="text-xs font-medium text-foreground/70 tracking-wide uppercase">Early Access</span>
           </div>
 
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-8 leading-tight">
@@ -63,7 +63,7 @@ export default function FinalCTA() {
             <span className="gradient-text">Improvement Journey</span>
           </h2>
 
-          <p className="text-lg text-white/50 max-w-2xl mx-auto mb-12 leading-relaxed">
+          <p className="text-lg text-foreground/50 max-w-2xl mx-auto mb-12 leading-relaxed">
             We&apos;re building the ultimate AI chess coaching platform.
             Join the waitlist and be the first to experience the future of chess training.
           </p>
@@ -73,14 +73,14 @@ export default function FinalCTA() {
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
-                className="p-8 rounded-2xl bg-white/[0.02] border border-white/10 glass-card"
+                className="p-8 rounded-2xl bg-foreground/[0.02] border border-foreground/10 glass-card"
               >
                 <div className="text-4xl mb-4">♟</div>
-                <h3 className="text-2xl font-bold text-white mb-2">Checkmate!</h3>
-                <p className="text-white/40 mb-6">You&apos;re officially on the list. We&apos;ll notify you at launch.</p>
+                <h3 className="text-2xl font-bold text-foreground mb-2">Checkmate!</h3>
+                <p className="text-foreground/40 mb-6">You&apos;re officially on the list. We&apos;ll notify you at launch.</p>
                 <button
                   onClick={() => setStatus("idle")}
-                  className="text-xs text-white/30 uppercase tracking-widest hover:text-white transition-colors"
+                  className="text-xs text-foreground/30 uppercase tracking-widest hover:text-foreground transition-colors"
                 >
                   Register Another Email
                 </button>
@@ -90,7 +90,7 @@ export default function FinalCTA() {
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary via-secondary to-accent rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
                 <form
                   onSubmit={handleSubmit}
-                  className="relative flex flex-col sm:flex-row gap-3 bg-surface p-2 rounded-2xl border border-white/10 shadow-2xl"
+                  className="relative flex flex-col sm:flex-row gap-3 bg-surface p-2 rounded-2xl border border-foreground/10 shadow-2xl"
                 >
                   {/* FormSubmit Configuration */}
                   <input type="hidden" name="_subject" value="New Waitlist Signup - ChessMazes" />
@@ -102,7 +102,7 @@ export default function FinalCTA() {
                     name="email"
                     required
                     placeholder="Enter your email"
-                    className="flex-1 px-6 py-4 rounded-xl bg-transparent text-white placeholder-white/20 focus:outline-none transition-all"
+                    className="flex-1 px-6 py-4 rounded-xl bg-transparent text-foreground placeholder-foreground/20 focus:outline-none transition-all"
                   />
                   <button
                     type="submit"
@@ -121,7 +121,7 @@ export default function FinalCTA() {
             )}
           </div>
 
-          <p className="mt-8 text-[10px] text-white/20 uppercase tracking-[0.2em] font-medium">
+          <p className="mt-8 text-[10px] text-foreground/20 uppercase tracking-[0.2em] font-medium">
             Join 500+ chess players already on the list
           </p>
         </motion.div>

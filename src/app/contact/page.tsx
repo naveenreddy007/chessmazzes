@@ -46,9 +46,9 @@ export default function ContactPage() {
         <div className="relative z-10 max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-16">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div className="lg:sticky lg:top-32">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 mb-8">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-foreground/10 bg-foreground/5 mb-8">
                 <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-                <span className="text-xs font-medium text-white/70 tracking-wide uppercase">Contact Us</span>
+                <span className="text-xs font-medium text-foreground/70 tracking-wide uppercase">Contact Us</span>
               </div>
               
               <h1 className="text-5xl lg:text-6xl font-bold tracking-tight mb-8">
@@ -56,22 +56,22 @@ export default function ContactPage() {
                 <span className="gradient-text">Your Chess Journey.</span>
               </h1>
               
-              <p className="text-lg text-white/50 mb-12 max-w-md leading-relaxed">
+              <p className="text-lg text-foreground/50 mb-12 max-w-md leading-relaxed">
                 Whether you&apos;re a player looking to improve or an academy seeking AI integration, we&apos;re here to help.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-8 lg:gap-10">
                 <div className="space-y-8">
                   <div className="group">
-                    <div className="text-xs text-white/30 uppercase tracking-[0.2em] font-bold mb-3 group-hover:text-accent transition-colors">Email Us</div>
-                    <a href={`mailto:${email}`} className="text-white hover:text-accent font-medium text-lg transition-colors break-all">
+                    <div className="text-xs text-foreground/30 uppercase tracking-[0.2em] font-bold mb-3 group-hover:text-accent transition-colors">Email Us</div>
+                    <a href={`mailto:${email}`} className="text-foreground hover:text-accent font-medium text-lg transition-colors break-all">
                       {email}
                     </a>
                   </div>
 
                   <div className="group">
-                    <div className="text-xs text-white/30 uppercase tracking-[0.2em] font-bold mb-3 group-hover:text-primary transition-colors">Call Us</div>
-                    <a href={`tel:${phone}`} className="text-white hover:text-primary font-medium text-lg transition-colors">
+                    <div className="text-xs text-foreground/30 uppercase tracking-[0.2em] font-bold mb-3 group-hover:text-primary transition-colors">Call Us</div>
+                    <a href={`tel:${phone}`} className="text-foreground hover:text-primary font-medium text-lg transition-colors">
                       +91 {phone}
                     </a>
                   </div>
@@ -79,16 +79,16 @@ export default function ContactPage() {
 
                 <div className="space-y-8">
                   <div className="group">
-                    <div className="text-xs text-white/30 uppercase tracking-[0.2em] font-bold mb-3 group-hover:text-secondary transition-colors">Headquarters</div>
-                    <div className="text-white/80 leading-relaxed">
+                    <div className="text-xs text-foreground/30 uppercase tracking-[0.2em] font-bold mb-3 group-hover:text-secondary transition-colors">Headquarters</div>
+                    <div className="text-foreground/80 leading-relaxed">
                       Hyderabad, <br />
                       Telangana, India
                     </div>
                   </div>
 
                   <div className="group">
-                    <div className="text-xs text-white/30 uppercase tracking-[0.2em] font-bold mb-3 group-hover:text-secondary transition-colors">Branch Office</div>
-                    <div className="text-white/80 leading-relaxed">
+                    <div className="text-xs text-foreground/30 uppercase tracking-[0.2em] font-bold mb-3 group-hover:text-secondary transition-colors">Branch Office</div>
+                    <div className="text-foreground/80 leading-relaxed">
                       Anantapur, <br />
                       Andhra Pradesh, India
                     </div>
@@ -97,13 +97,13 @@ export default function ContactPage() {
               </div>
               
               {/* Trust Badge */}
-              <div className="mt-16 p-6 rounded-2xl bg-white/[0.02] border border-white/5 inline-flex items-center gap-4">
+              <div className="mt-16 p-6 rounded-2xl bg-foreground/[0.02] border border-foreground/5 inline-flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-emerald/10 flex items-center justify-center text-emerald">
                   ✓
                 </div>
                 <div>
-                  <div className="text-sm font-bold text-white">Direct Support</div>
-                  <div className="text-xs text-white/40">We typically respond within 24 hours</div>
+                  <div className="text-sm font-bold text-foreground">Direct Support</div>
+                  <div className="text-xs text-foreground/40">We typically respond within 24 hours</div>
                 </div>
               </div>
             </div>
@@ -118,8 +118,8 @@ export default function ContactPage() {
                   <div className="w-20 h-20 bg-emerald/10 text-emerald rounded-full flex items-center justify-center text-3xl mx-auto mb-6 animate-bounce">
                     ✓
                   </div>
-                  <h3 className="text-3xl font-bold text-white mb-4">Message Sent!</h3>
-                  <p className="text-white/50 mb-8">
+                  <h3 className="text-3xl font-bold text-foreground mb-4">Message Sent!</h3>
+                  <p className="text-foreground/50 mb-8">
                     Thank you for reaching out. We&apos;ve received your message and will get back to you shortly.
                   </p>
                   <button 
@@ -132,8 +132,8 @@ export default function ContactPage() {
               ) : (
                 <>
                   <div className="mb-8">
-                    <h3 className="text-3xl font-bold text-white mb-2">Send Message</h3>
-                    <p className="text-white/40">Fill out the form below and we&apos;ll get back to you.</p>
+                    <h3 className="text-3xl font-bold text-foreground mb-2">Send Message</h3>
+                    <p className="text-foreground/40">Fill out the form below and we&apos;ll get back to you.</p>
                   </div>
                   
                   <form 
@@ -147,24 +147,24 @@ export default function ContactPage() {
                     
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div className="space-y-2">
-                        <label className="text-xs font-bold text-white/50 uppercase tracking-widest ml-1" htmlFor="name">Full Name</label>
+                        <label className="text-xs font-bold text-foreground/50 uppercase tracking-widest ml-1" htmlFor="name">Full Name</label>
                         <input 
                           id="name"
                           name="name"
                           type="text" 
                           required
-                          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-4 text-white focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-transparent transition-all placeholder:text-white/20" 
+                          className="w-full bg-foreground/5 border border-foreground/10 rounded-xl px-4 py-4 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-transparent transition-all placeholder:text-foreground/20" 
                           placeholder="Garry Kasparov" 
                         />
                       </div>
                       <div className="space-y-2">
-                        <label className="text-xs font-bold text-white/50 uppercase tracking-widest ml-1" htmlFor="email">Email Address</label>
+                        <label className="text-xs font-bold text-foreground/50 uppercase tracking-widest ml-1" htmlFor="email">Email Address</label>
                         <input 
                           id="email"
                           name="email"
                           type="email" 
                           required
-                          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-4 text-white focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-transparent transition-all placeholder:text-white/20" 
+                          className="w-full bg-foreground/5 border border-foreground/10 rounded-xl px-4 py-4 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-transparent transition-all placeholder:text-foreground/20" 
                           placeholder="garry@example.com" 
                         />
                       </div>
@@ -172,30 +172,30 @@ export default function ContactPage() {
 
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div className="space-y-2">
-                        <label className="text-xs font-bold text-white/50 uppercase tracking-widest ml-1" htmlFor="phone">Mobile Number</label>
+                        <label className="text-xs font-bold text-foreground/50 uppercase tracking-widest ml-1" htmlFor="phone">Mobile Number</label>
                         <input 
                           id="phone"
                           name="phone"
                           type="tel" 
                           required
-                          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-4 text-white focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-transparent transition-all placeholder:text-white/20" 
+                          className="w-full bg-foreground/5 border border-foreground/10 rounded-xl px-4 py-4 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-transparent transition-all placeholder:text-foreground/20" 
                           placeholder="+91 93464 36368" 
                         />
                       </div>
                       <div className="space-y-2">
-                        <label className="text-xs font-bold text-white/50 uppercase tracking-widest ml-1" htmlFor="type">I am a...</label>
+                        <label className="text-xs font-bold text-foreground/50 uppercase tracking-widest ml-1" htmlFor="type">I am a...</label>
                         <div className="relative">
                           <select 
                             id="type"
                             name="user_type"
                             required
-                            className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-4 text-white focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-transparent transition-all appearance-none cursor-pointer"
+                            className="w-full bg-foreground/5 border border-foreground/10 rounded-xl px-4 py-4 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-transparent transition-all appearance-none cursor-pointer"
                           >
                             <option value="Player" className="bg-surface">Chess Player</option>
                             <option value="Academy" className="bg-surface">Chess Academy</option>
                             <option value="Other" className="bg-surface">Other</option>
                           </select>
-                          <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-white/40">
+                          <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-foreground/40">
                             ↓
                           </div>
                         </div>
@@ -203,13 +203,13 @@ export default function ContactPage() {
                     </div>
 
                     <div className="space-y-2">
-                      <label className="text-xs font-bold text-white/50 uppercase tracking-widest ml-1" htmlFor="message">How can we help?</label>
+                      <label className="text-xs font-bold text-foreground/50 uppercase tracking-widest ml-1" htmlFor="message">How can we help?</label>
                       <textarea 
                         id="message"
                         name="message"
                         required
                         rows={4} 
-                        className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-4 text-white focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-transparent transition-all resize-none placeholder:text-white/20" 
+                        className="w-full bg-foreground/5 border border-foreground/10 rounded-xl px-4 py-4 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-transparent transition-all resize-none placeholder:text-foreground/20" 
                         placeholder="Tell us about your requirements..." 
                       />
                     </div>
@@ -231,7 +231,7 @@ export default function ContactPage() {
                       </p>
                     )}
 
-                    <p className="text-[10px] text-center text-white/20 uppercase tracking-[0.2em] font-medium">
+                    <p className="text-[10px] text-center text-foreground/20 uppercase tracking-[0.2em] font-medium">
                       Secure & Encrypted Submission
                     </p>
                   </form>

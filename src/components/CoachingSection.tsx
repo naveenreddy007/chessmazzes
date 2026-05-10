@@ -59,7 +59,7 @@ export default function CoachingSection() {
               Your Personal{" "}
               <span className="gradient-text">AI Chess Coach</span>
             </h2>
-            <p className="text-white/45 text-lg leading-relaxed mb-8">
+            <p className="text-foreground/45 text-lg leading-relaxed mb-8">
               ChessMazes is building the most intelligent chess coaching system ever made. 
               It learns from your games, identifies your weaknesses, and creates a daily training 
               plan that adapts as you improve.
@@ -96,12 +96,12 @@ export default function CoachingSection() {
                   transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
                   className="flex gap-4 group"
                 >
-                  <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-white/5 to-white/[0.02] flex items-center justify-center text-lg flex-shrink-0 border border-white/[0.06] group-hover:border-white/10 transition-colors">
+                  <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-white/5 to-white/[0.02] flex items-center justify-center text-lg flex-shrink-0 border border-foreground/[0.06] group-hover:border-foreground/10 transition-colors">
                     {feat.icon}
                   </div>
                   <div>
-                    <h4 className="font-semibold text-white text-sm mb-0.5">{feat.title}</h4>
-                    <p className="text-xs text-white/35 leading-relaxed">{feat.desc}</p>
+                    <h4 className="font-semibold text-foreground text-sm mb-0.5">{feat.title}</h4>
+                    <p className="text-xs text-foreground/35 leading-relaxed">{feat.desc}</p>
                   </div>
                 </motion.div>
               ))}
@@ -125,8 +125,8 @@ export default function CoachingSection() {
                   className="text-center py-12"
                 >
                   <div className="text-5xl mb-4">🎉</div>
-                  <h3 className="text-2xl font-bold text-white mb-2">You&apos;re In!</h3>
-                  <p className="text-white/40 text-sm max-w-xs mx-auto">
+                  <h3 className="text-2xl font-bold text-foreground mb-2">You&apos;re In!</h3>
+                  <p className="text-foreground/40 text-sm max-w-xs mx-auto">
                     Thanks for your interest! We&apos;ll notify you as soon as ChessMazes coaching 
                     is ready. Get ready to level up your chess.
                   </p>
@@ -139,10 +139,10 @@ export default function CoachingSection() {
                 </motion.div>
               ) : (
                 <>
-                  <h3 className="text-xl font-bold text-white mb-1 relative">
+                  <h3 className="text-xl font-bold text-foreground mb-1 relative">
                     Get Early Access
                   </h3>
-                  <p className="text-sm text-white/35 mb-6">
+                  <p className="text-sm text-foreground/35 mb-6">
                     Be the first to experience AI-powered chess coaching.
                   </p>
 
@@ -153,7 +153,7 @@ export default function CoachingSection() {
                     
                     {/* Name */}
                     <div>
-                      <label htmlFor="name" className="block text-xs font-medium text-white/50 mb-1.5">
+                      <label htmlFor="name" className="block text-xs font-medium text-foreground/50 mb-1.5">
                         Full Name
                       </label>
                       <input
@@ -161,14 +161,14 @@ export default function CoachingSection() {
                         name="name"
                         type="text"
                         required
-                        className="w-full px-4 py-3 rounded-xl bg-white/[0.04] border border-white/[0.08] text-white text-sm placeholder-white/20 focus:outline-none focus:border-violet/40 focus:ring-1 focus:ring-violet/20 transition-all"
+                        className="w-full px-4 py-3 rounded-xl bg-foreground/[0.04] border border-foreground/[0.08] text-foreground text-sm placeholder-foreground/20 focus:outline-none focus:border-violet/40 focus:ring-1 focus:ring-violet/20 transition-all"
                         placeholder="Viswanathan Anand"
                       />
                     </div>
 
                     {/* Email */}
                     <div>
-                      <label htmlFor="email" className="block text-xs font-medium text-white/50 mb-1.5">
+                      <label htmlFor="email" className="block text-xs font-medium text-foreground/50 mb-1.5">
                         Email Address
                       </label>
                       <input
@@ -176,20 +176,20 @@ export default function CoachingSection() {
                         name="email"
                         type="email"
                         required
-                        className="w-full px-4 py-3 rounded-xl bg-white/[0.04] border border-white/[0.08] text-white text-sm placeholder-white/20 focus:outline-none focus:border-violet/40 focus:ring-1 focus:ring-violet/20 transition-all"
+                        className="w-full px-4 py-3 rounded-xl bg-foreground/[0.04] border border-foreground/[0.08] text-foreground text-sm placeholder-foreground/20 focus:outline-none focus:border-violet/40 focus:ring-1 focus:ring-violet/20 transition-all"
                         placeholder="you@email.com"
                       />
                     </div>
 
                     {/* Role */}
                     <div>
-                      <label htmlFor="role" className="block text-xs font-medium text-white/50 mb-1.5">
+                      <label htmlFor="role" className="block text-xs font-medium text-foreground/50 mb-1.5">
                         I am a...
                       </label>
                       <select
                         id="role"
                         name="user_type"
-                        className="w-full px-4 py-3 rounded-xl bg-white/[0.04] border border-white/[0.08] text-white text-sm focus:outline-none focus:border-violet/40 focus:ring-1 focus:ring-violet/20 transition-all appearance-none cursor-pointer"
+                        className="w-full px-4 py-3 rounded-xl bg-foreground/[0.04] border border-foreground/[0.08] text-foreground text-sm focus:outline-none focus:border-violet/40 focus:ring-1 focus:ring-violet/20 transition-all appearance-none cursor-pointer"
                       >
                         <option value="Player" className="bg-navy-card">Chess Player</option>
                         <option value="Academy" className="bg-navy-card">Chess Academy / Coach</option>
@@ -199,14 +199,14 @@ export default function CoachingSection() {
 
                     {/* Message */}
                     <div>
-                      <label htmlFor="message" className="block text-xs font-medium text-white/50 mb-1.5">
-                        What excites you most? <span className="text-white/20">(optional)</span>
+                      <label htmlFor="message" className="block text-xs font-medium text-foreground/50 mb-1.5">
+                        What excites you most? <span className="text-foreground/20">(optional)</span>
                       </label>
                       <textarea
                         id="message"
                         name="message"
                         rows={3}
-                        className="w-full px-4 py-3 rounded-xl bg-white/[0.04] border border-white/[0.08] text-white text-sm placeholder-white/20 focus:outline-none focus:border-violet/40 focus:ring-1 focus:ring-violet/20 transition-all resize-none"
+                        className="w-full px-4 py-3 rounded-xl bg-foreground/[0.04] border border-foreground/[0.08] text-foreground text-sm placeholder-foreground/20 focus:outline-none focus:border-violet/40 focus:ring-1 focus:ring-violet/20 transition-all resize-none"
                         placeholder="I'd love personalized endgame training..."
                       />
                     </div>
@@ -233,7 +233,7 @@ export default function CoachingSection() {
                       <p className="text-xs text-rose text-center font-medium">Error. Please try again.</p>
                     )}
 
-                    <p className="text-[11px] text-white/20 text-center">
+                    <p className="text-[11px] text-foreground/20 text-center">
                       No spam. We&apos;ll only email you when it&apos;s ready.
                     </p>
                   </form>

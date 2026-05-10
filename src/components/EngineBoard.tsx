@@ -298,7 +298,7 @@ export default function EngineBoard() {
       <div className="absolute -inset-6 bg-gradient-to-r from-primary/25 to-secondary/15 rounded-3xl blur-2xl opacity-60 pointer-events-none" />
 
       {/* Beautiful, responsive chessboard container */}
-      <div className="relative w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] lg:w-[410px] lg:h-[410px] rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-slate-950 p-1.5 sm:p-2">
+      <div className="relative w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] lg:w-[410px] lg:h-[410px] rounded-2xl overflow-hidden border border-foreground/10 shadow-2xl bg-slate-950 p-1.5 sm:p-2">
         <div className="grid grid-cols-8 grid-rows-8 w-full h-full rounded-lg overflow-hidden relative">
           {board.map((piece, i) => {
             const row = Math.floor(i / 8);

@@ -25,9 +25,9 @@ export default function PricingPage() {
 
         <div className="relative z-10 max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-16 text-center py-10 sm:py-16">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-foreground/10 bg-foreground/5 mb-8">
             <span className="w-2 h-2 rounded-full bg-amber animate-pulse" />
-            <span className="text-xs font-medium text-white/70 tracking-wide uppercase">
+            <span className="text-xs font-medium text-foreground/70 tracking-wide uppercase">
               App Coming Soon
             </span>
           </div>
@@ -36,7 +36,7 @@ export default function PricingPage() {
             Pricing{" "}
             <span className="gradient-text">Coming Soon</span>
           </h1>
-          <p className="text-xl text-white/40 max-w-2xl mx-auto leading-relaxed mb-10">
+          <p className="text-xl text-foreground/40 max-w-2xl mx-auto leading-relaxed mb-10">
             We&apos;re finalizing our plans to bring you the best value in AI chess coaching. 
             Join the waitlist to get notified and receive exclusive early-bird pricing.
           </p>
@@ -48,7 +48,7 @@ export default function PricingPage() {
               { icon: "⚡", text: "Early Bird Discount" },
               { icon: "💰", text: "Free Tier Included" },
             ].map((item) => (
-              <div key={item.text} className="flex items-center gap-2 text-sm text-white/40">
+              <div key={item.text} className="flex items-center gap-2 text-sm text-foreground/40">
                 <span>{item.icon}</span>
                 <span>{item.text}</span>
               </div>

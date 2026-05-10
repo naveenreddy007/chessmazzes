@@ -30,7 +30,7 @@ export default function Differentiation() {
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
             Why <span className="gradient-text">ChessMazes</span>?
           </h2>
-          <p className="text-white/40 text-lg max-w-2xl mx-auto">
+          <p className="text-foreground/40 text-lg max-w-2xl mx-auto">
             Traditional tools give you engine analysis. We give you a path to improvement.
           </p>
         </motion.div>
@@ -46,12 +46,12 @@ export default function Differentiation() {
               <div className="absolute top-6 right-6">
                 <span className="text-xs font-semibold text-white bg-gradient-to-r from-primary to-secondary px-3 py-1 rounded-full">Recommended</span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-6 gradient-text">ChessMazes</h3>
+              <h3 className="text-xl font-bold text-foreground mb-6 gradient-text">ChessMazes</h3>
               <ul className="space-y-4">
                 {chessMazes.map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <span className="mt-0.5 text-emerald text-lg">✓</span>
-                    <span className="text-white/70 text-sm leading-relaxed">{item}</span>
+                    <span className="text-foreground/70 text-sm leading-relaxed">{item}</span>
                   </li>
                 ))}
               </ul>

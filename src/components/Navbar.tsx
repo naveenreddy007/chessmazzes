@@ -38,7 +38,7 @@ export default function Navbar() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
-            ? "bg-[rgba(6,9,15,0.85)] backdrop-blur-xl border-b border-white/5 shadow-lg shadow-black/20"
+            ? "bg-[rgba(6,9,15,0.85)] backdrop-blur-xl border-b border-foreground/5 shadow-lg shadow-foreground/20"
             : "bg-transparent"
         }`}
       >
@@ -68,7 +68,7 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   className={`text-sm transition-colors duration-300 relative group ${
-                    isActive ? "text-primary" : "text-white/60 hover:text-white"
+                    isActive ? "text-primary" : "text-foreground/60 hover:text-foreground"
                   }`}
                 >
                   {link.label}
@@ -101,15 +101,15 @@ export default function Navbar() {
             <div className="flex flex-col gap-1.5">
               <motion.span
                 animate={mobileOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
-                className="block w-6 h-0.5 bg-white/70"
+                className="block w-6 h-0.5 bg-foreground/70"
               />
               <motion.span
                 animate={mobileOpen ? { opacity: 0 } : { opacity: 1 }}
-                className="block w-6 h-0.5 bg-white/70"
+                className="block w-6 h-0.5 bg-foreground/70"
               />
               <motion.span
                 animate={mobileOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
-                className="block w-6 h-0.5 bg-white/70"
+                className="block w-6 h-0.5 bg-foreground/70"
               />
             </div>
           </button>
@@ -138,14 +138,14 @@ export default function Navbar() {
                     href={link.href}
                     onClick={() => setMobileOpen(false)}
                     className={`text-2xl font-medium transition-colors block ${
-                      pathname === link.href ? "text-primary" : "text-white/80 hover:text-white"
+                      pathname === link.href ? "text-primary" : "text-foreground/80 hover:text-foreground"
                     }`}
                   >
                     {link.label}
                   </Link>
                 </motion.div>
               ))}
-              <div className="pt-6 border-t border-white/10 flex flex-col gap-3">
+              <div className="pt-6 border-t border-foreground/10 flex flex-col gap-3">
                 <Link
                   href="/pricing"
                   className="btn-primary text-center"

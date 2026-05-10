@@ -51,7 +51,7 @@ export default function Testimonials() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
             Players <span className="gradient-text">Love It</span>
           </h2>
-          <p className="text-white/40 text-lg max-w-2xl mx-auto">
+          <p className="text-foreground/40 text-lg max-w-2xl mx-auto">
             Join thousands of players who are improving faster with ChessMazes.
           </p>
         </motion.div>
@@ -65,7 +65,7 @@ export default function Testimonials() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="group"
             >
-              <div className="glass-card p-6 h-full hover:border-white/15 transition-all duration-300 hover:-translate-y-1">
+              <div className="glass-card p-6 h-full hover:border-foreground/15 transition-all duration-300 hover:-translate-y-1">
                 {/* Stars */}
                 <div className="flex gap-1 mb-4">
                   {Array.from({ length: t.stars }).map((_, j) => (
@@ -74,21 +74,21 @@ export default function Testimonials() {
                 </div>
 
                 {/* Quote */}
-                <p className="text-sm text-white/50 leading-relaxed mb-5 group-hover:text-white/65 transition-colors">
+                <p className="text-sm text-foreground/50 leading-relaxed mb-5 group-hover:text-foreground/65 transition-colors">
                   &ldquo;{t.text}&rdquo;
                 </p>
 
                 {/* Author */}
                 <div className="flex items-center gap-3 mt-auto">
                   <div
-                    className="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-white"
+                    className="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-foreground"
                     style={{ backgroundColor: t.color }}
                   >
                     {t.name.split(" ").map(n => n[0]).join("")}
                   </div>
                   <div>
-                    <div className="text-sm font-medium text-white">{t.name}</div>
-                    <div className="text-xs text-white/30">{t.rating}</div>
+                    <div className="text-sm font-medium text-foreground">{t.name}</div>
+                    <div className="text-xs text-foreground/30">{t.rating}</div>
                   </div>
                 </div>
               </div>

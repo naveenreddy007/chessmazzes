@@ -51,9 +51,9 @@ export default function AcademyPage() {
 
         <div className="relative z-10 max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-16 text-center py-10 sm:py-16">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-foreground/10 bg-foreground/5 mb-8">
             <span className="w-2 h-2 rounded-full bg-amber animate-pulse" />
-            <span className="text-xs font-medium text-white/70 tracking-wide uppercase">
+            <span className="text-xs font-medium text-foreground/70 tracking-wide uppercase">
               App Coming Soon
             </span>
           </div>
@@ -62,7 +62,7 @@ export default function AcademyPage() {
             Empower Your{" "}
             <span className="gradient-text">Academy</span>
           </h1>
-          <p className="text-xl text-white/40 max-w-2xl mx-auto leading-relaxed mb-10">
+          <p className="text-xl text-foreground/40 max-w-2xl mx-auto leading-relaxed mb-10">
             Give your students access to the most advanced AI-powered chess training platform. 
             Track their progress, manage curriculum, and watch them improve.
           </p>
@@ -76,7 +76,7 @@ export default function AcademyPage() {
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="text-2xl sm:text-3xl font-bold gradient-text">{stat.value}</div>
-                <div className="text-xs text-white/30 mt-1">{stat.label}</div>
+                <div className="text-xs text-foreground/30 mt-1">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -104,10 +104,10 @@ export default function AcademyPage() {
               { icon: "🔐", title: "Secure", desc: "Student data is encrypted and compliant with privacy standards." },
               { icon: "💬", title: "Support", desc: "Dedicated account manager for academy partners." },
             ].map((item) => (
-              <div key={item.title} className="glass-card p-6 group hover:border-white/15 transition-all duration-300 hover:-translate-y-1">
+              <div key={item.title} className="glass-card p-6 group hover:border-foreground/15 transition-all duration-300 hover:-translate-y-1">
                 <div className="text-2xl mb-3">{item.icon}</div>
-                <h3 className="font-bold text-white mb-2">{item.title}</h3>
-                <p className="text-sm text-white/40 group-hover:text-white/55 transition-colors">{item.desc}</p>
+                <h3 className="font-bold text-foreground mb-2">{item.title}</h3>
+                <p className="text-sm text-foreground/40 group-hover:text-foreground/55 transition-colors">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -121,8 +121,8 @@ export default function AcademyPage() {
         <div className="max-w-4xl mx-auto px-6 sm:px-12 relative">
           <div className="glass-card p-10 sm:p-12 border-amber/10 bg-gradient-to-br from-navy-card to-amber/[0.02]">
             <div className="text-center mb-10">
-              <h2 className="text-3xl font-bold text-white mb-4">Request Academy Access</h2>
-              <p className="text-white/40 text-sm">Fill out the details below and our partnership team will reach out with a custom onboarding plan.</p>
+              <h2 className="text-3xl font-bold text-foreground mb-4">Request Academy Access</h2>
+              <p className="text-foreground/40 text-sm">Fill out the details below and our partnership team will reach out with a custom onboarding plan.</p>
             </div>
 
             {status === "success" ? (
@@ -132,8 +132,8 @@ export default function AcademyPage() {
                 className="text-center py-12"
               >
                 <div className="text-5xl mb-6">🏆</div>
-                <h3 className="text-2xl font-bold text-white mb-3">Application Received!</h3>
-                <p className="text-white/40 mb-8 max-w-sm mx-auto">
+                <h3 className="text-2xl font-bold text-foreground mb-3">Application Received!</h3>
+                <p className="text-foreground/40 mb-8 max-w-sm mx-auto">
                   Thank you for your interest in ChessMazes. Our partnership team will contact you within 48 hours to discuss your academy&apos;s needs.
                 </p>
                 <button 
@@ -153,29 +153,29 @@ export default function AcademyPage() {
 
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label className="text-xs font-bold text-white/30 uppercase tracking-widest">Academy Name</label>
-                    <input name="academy_name" required type="text" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-amber/50 transition-colors" placeholder="Grandmaster Academy" />
+                    <label className="text-xs font-bold text-foreground/30 uppercase tracking-widest">Academy Name</label>
+                    <input name="academy_name" required type="text" className="w-full bg-foreground/5 border border-foreground/10 rounded-xl px-4 py-3.5 text-foreground focus:outline-none focus:border-amber/50 transition-colors" placeholder="Grandmaster Academy" />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-xs font-bold text-white/30 uppercase tracking-widest">Estimated Students</label>
+                    <label className="text-xs font-bold text-foreground/30 uppercase tracking-widest">Estimated Students</label>
                     <div className="relative">
-                      <select name="student_count" required className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-white/70 focus:outline-none focus:border-amber/50 transition-colors appearance-none cursor-pointer">
-                        <option value="1-20" className="bg-navy-card text-white">1-20 students</option>
-                        <option value="21-50" className="bg-navy-card text-white">21-50 students</option>
-                        <option value="51-200" className="bg-navy-card text-white">51-200 students</option>
-                        <option value="200+" className="bg-navy-card text-white">200+ students</option>
+                      <select name="student_count" required className="w-full bg-foreground/5 border border-foreground/10 rounded-xl px-4 py-3.5 text-foreground/70 focus:outline-none focus:border-amber/50 transition-colors appearance-none cursor-pointer">
+                        <option value="1-20" className="bg-navy-card text-foreground">1-20 students</option>
+                        <option value="21-50" className="bg-navy-card text-foreground">21-50 students</option>
+                        <option value="51-200" className="bg-navy-card text-foreground">51-200 students</option>
+                        <option value="200+" className="bg-navy-card text-foreground">200+ students</option>
                       </select>
-                      <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-white/20">↓</div>
+                      <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-foreground/20">↓</div>
                     </div>
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <label className="text-xs font-bold text-white/30 uppercase tracking-widest">Head Coach Email</label>
-                  <input name="email" required type="email" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-amber/50 transition-colors" placeholder="coach@academy.com" />
+                  <label className="text-xs font-bold text-foreground/30 uppercase tracking-widest">Head Coach Email</label>
+                  <input name="email" required type="email" className="w-full bg-foreground/5 border border-foreground/10 rounded-xl px-4 py-3.5 text-foreground focus:outline-none focus:border-amber/50 transition-colors" placeholder="coach@academy.com" />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-xs font-bold text-white/30 uppercase tracking-widest">Additional Notes</label>
-                  <textarea name="notes" rows={3} className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-amber/50 transition-colors resize-none" placeholder="Tell us about your training goals..." />
+                  <label className="text-xs font-bold text-foreground/30 uppercase tracking-widest">Additional Notes</label>
+                  <textarea name="notes" rows={3} className="w-full bg-foreground/5 border border-foreground/10 rounded-xl px-4 py-3.5 text-foreground focus:outline-none focus:border-amber/50 transition-colors resize-none" placeholder="Tell us about your training goals..." />
                 </div>
                 
                 <button 

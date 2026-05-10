@@ -11,16 +11,16 @@ export default function AboutPage() {
       <section className="relative overflow-hidden">
         <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-blue-electric/10 rounded-full blur-[120px] animate-float" />
         <div className="relative z-10 max-w-5xl mx-auto px-6 sm:px-12">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-foreground/10 bg-foreground/5 mb-8">
             <span className="w-2 h-2 rounded-full bg-amber animate-pulse" />
-            <span className="text-xs font-medium text-white/70 tracking-wide uppercase">Our Story</span>
+            <span className="text-xs font-medium text-foreground/70 tracking-wide uppercase">Our Story</span>
           </div>
           
           <h1 className="text-5xl sm:text-6xl font-bold tracking-tight mb-8">
             The Mission Behind <span className="gradient-text">ChessMazes</span>
           </h1>
           
-          <div className="space-y-6 text-lg text-white/60 leading-relaxed">
+          <div className="space-y-6 text-lg text-foreground/60 leading-relaxed">
             <p>
               ChessMazes was born out of a simple frustration: private chess coaching is expensive, 
               and traditional chess apps are too generic. Most players get stuck at a plateau because 
@@ -38,15 +38,15 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-3 gap-8 mt-16 pt-16 border-t border-white/5">
+          <div className="grid sm:grid-cols-3 gap-8 mt-16 pt-16 border-t border-foreground/5">
             {[
               { label: "Founded", value: "2024" },
               { label: "Community", value: "2,000+" },
               { label: "AI Analyzed Games", value: "1M+" },
             ].map((stat) => (
               <div key={stat.label}>
-                <div className="text-3xl font-bold text-white mb-1">{stat.value}</div>
-                <div className="text-sm text-white/30 uppercase tracking-widest">{stat.label}</div>
+                <div className="text-3xl font-bold text-foreground mb-1">{stat.value}</div>
+                <div className="text-sm text-foreground/30 uppercase tracking-widest">{stat.label}</div>
               </div>
             ))}
           </div>

@@ -51,7 +51,7 @@ export default function Pricing() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
             Choose Your <span className="gradient-text">Plan</span>
           </h2>
-          <p className="text-white/40 text-lg max-w-2xl mx-auto">
+          <p className="text-foreground/40 text-lg max-w-2xl mx-auto">
             Start free and upgrade as you grow. All plans include core AI analysis features.
           </p>
         </motion.div>
@@ -76,10 +76,10 @@ export default function Pricing() {
               </span>
             </div>
 
-            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3 relative">
+            <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-3 relative">
               We&apos;re Building Something <span className="gradient-text">Special</span>
             </h3>
-            <p className="text-white/40 text-sm sm:text-base leading-relaxed mb-8 max-w-lg mx-auto">
+            <p className="text-foreground/40 text-sm sm:text-base leading-relaxed mb-8 max-w-lg mx-auto">
               Our AI chess coaching platform is under active development.
               Be the first to know when we launch — get early access and exclusive early-bird updates.
             </p>
@@ -92,11 +92,11 @@ export default function Pricing() {
                 className="py-4"
               >
                 <div className="text-2xl mb-2">🎉</div>
-                <p className="text-white font-semibold mb-1">You&apos;re on the list!</p>
-                <p className="text-white/35 text-sm">We&apos;ll notify you as soon as we launch.</p>
+                <p className="text-foreground font-semibold mb-1">You&apos;re on the list!</p>
+                <p className="text-foreground/35 text-sm">We&apos;ll notify you as soon as we launch.</p>
                 <button
                   onClick={() => setStatus("idle")}
-                  className="mt-4 text-[10px] text-white/30 uppercase tracking-widest hover:text-white transition-colors"
+                  className="mt-4 text-[10px] text-foreground/30 uppercase tracking-widest hover:text-foreground transition-colors"
                 >
                   Join with another email
                 </button>
@@ -113,7 +113,7 @@ export default function Pricing() {
                   name="email"
                   required
                   placeholder="Enter your email"
-                  className="flex-1 px-4 py-3 rounded-xl bg-white/[0.04] border border-white/[0.08] text-white text-sm placeholder-white/20 focus:outline-none focus:border-secondary/40 focus:ring-1 focus:ring-secondary/20 transition-all"
+                  className="flex-1 px-4 py-3 rounded-xl bg-foreground/[0.04] border border-foreground/[0.08] text-foreground text-sm placeholder-foreground/20 focus:outline-none focus:border-secondary/40 focus:ring-1 focus:ring-secondary/20 transition-all"
                 />
                 <button
                   type="submit"
@@ -128,7 +128,7 @@ export default function Pricing() {
               <p className="text-xs text-rose mt-2 font-medium">Error signing up. Please try again.</p>
             )}
 
-            <p className="text-[11px] text-white/15 mt-4">
+            <p className="text-[11px] text-foreground/15 mt-4">
               No spam. We&apos;ll only email you when pricing is finalized.
             </p>
           </div>

@@ -44,7 +44,7 @@ export default function CoreValues() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
             A Smarter Way to <span className="gradient-text">Improve</span>
           </h2>
-          <p className="text-white/40 text-lg max-w-2xl mx-auto">
+          <p className="text-foreground/40 text-lg max-w-2xl mx-auto">
             Stop wasting time on generic training. ChessMazes builds a complete picture of your chess weaknesses and fixes them systematically.
           </p>
         </motion.div>
@@ -58,13 +58,13 @@ export default function CoreValues() {
               transition={{ duration: 0.6, delay: i * 0.15 }}
               className="group"
             >
-              <div className="glass-card p-8 h-full hover:border-white/15 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/20 relative overflow-hidden">
+              <div className="glass-card p-8 h-full hover:border-foreground/15 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-foreground/20 relative overflow-hidden">
                 <div className={`absolute -top-20 -right-20 w-40 h-40 bg-gradient-to-br ${item.gradient} rounded-full blur-3xl opacity-0 group-hover:opacity-10 transition-opacity duration-700`} />
                 <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${item.gradient} flex items-center justify-center text-2xl mb-6 shadow-lg ${item.glow} group-hover:scale-110 transition-transform duration-300`}>
                   {item.icon}
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-white">{item.title}</h3>
-                <p className="text-white/40 leading-relaxed group-hover:text-white/55 transition-colors duration-300">{item.description}</p>
+                <h3 className="text-xl font-bold mb-3 text-foreground">{item.title}</h3>
+                <p className="text-foreground/40 leading-relaxed group-hover:text-foreground/55 transition-colors duration-300">{item.description}</p>
               </div>
             </motion.div>
           ))}

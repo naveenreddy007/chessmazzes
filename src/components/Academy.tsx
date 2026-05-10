@@ -58,7 +58,7 @@ export default function Academy() {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
               Empower Your <span className="gradient-text-warm">Academy</span>
             </h2>
-            <p className="text-white/40 text-lg mb-8 leading-relaxed">
+            <p className="text-foreground/40 text-lg mb-8 leading-relaxed">
               Give your students the most advanced training system available. Track their progress, manage training plans, and watch them improve systematically.
             </p>
 
@@ -75,8 +75,8 @@ export default function Academy() {
                     {feat.icon}
                   </div>
                   <div>
-                    <h4 className="font-semibold text-white mb-1">{feat.title}</h4>
-                    <p className="text-sm text-white/40 leading-relaxed">{feat.desc}</p>
+                    <h4 className="font-semibold text-foreground mb-1">{feat.title}</h4>
+                    <p className="text-sm text-foreground/40 leading-relaxed">{feat.desc}</p>
                   </div>
                 </motion.div>
               ))}
@@ -84,7 +84,7 @@ export default function Academy() {
 
             {/* Notify form for coaches */}
             <div className="mt-10">
-              <h4 className="text-sm font-bold text-white mb-4 uppercase tracking-widest">Inquiry for Academies</h4>
+              <h4 className="text-sm font-bold text-foreground mb-4 uppercase tracking-widest">Inquiry for Academies</h4>
 
               {status === "success" ? (
                 <motion.div
@@ -93,10 +93,10 @@ export default function Academy() {
                   className="p-6 rounded-xl bg-emerald/5 border border-emerald/10 text-center max-w-md"
                 >
                   <p className="text-emerald font-semibold mb-1">Inquiry Sent Successfully!</p>
-                  <p className="text-white/40 text-xs">We&apos;ll get back to you shortly.</p>
+                  <p className="text-foreground/40 text-xs">We&apos;ll get back to you shortly.</p>
                   <button
                     onClick={() => setStatus("idle")}
-                    className="mt-4 text-[10px] text-white/30 uppercase tracking-widest hover:text-white transition-colors"
+                    className="mt-4 text-[10px] text-foreground/30 uppercase tracking-widest hover:text-foreground transition-colors"
                   >
                     Send Another
                   </button>
@@ -116,7 +116,7 @@ export default function Academy() {
                     name="email"
                     required
                     placeholder="Coach/Academy Email"
-                    className="flex-1 px-4 py-3 rounded-xl bg-white/[0.04] border border-white/[0.08] text-white text-sm placeholder-white/20 focus:outline-none focus:border-amber/40 focus:ring-1 focus:ring-amber/20 transition-all"
+                    className="flex-1 px-4 py-3 rounded-xl bg-foreground/[0.04] border border-foreground/[0.08] text-foreground text-sm placeholder-foreground/20 focus:outline-none focus:border-amber/40 focus:ring-1 focus:ring-amber/20 transition-all"
                   />
                   <button
                     type="submit"
@@ -145,7 +145,7 @@ export default function Academy() {
               {/* Mock dashboard */}
               <div className="space-y-4">
                 <div className="flex items-center justify-between mb-4">
-                  <h4 className="font-semibold text-white">Academy Dashboard</h4>
+                  <h4 className="font-semibold text-foreground">Academy Dashboard</h4>
                   <span className="text-xs text-amber bg-amber/10 px-2 py-1 rounded-full">In Development</span>
                 </div>
 
@@ -156,9 +156,9 @@ export default function Academy() {
                     { label: "Avg. Accuracy", value: "72%", trend: "+8%" },
                     { label: "Active Today", value: "31", trend: "+12" },
                   ].map((stat) => (
-                    <div key={stat.label} className="bg-white/[0.03] rounded-xl p-3 border border-white/5">
-                      <div className="text-xs text-white/30 mb-1">{stat.label}</div>
-                      <div className="text-lg font-bold text-white">{stat.value}</div>
+                    <div key={stat.label} className="bg-foreground/[0.03] rounded-xl p-3 border border-foreground/5">
+                      <div className="text-xs text-foreground/30 mb-1">{stat.label}</div>
+                      <div className="text-lg font-bold text-foreground">{stat.value}</div>
                       <div className="text-xs text-emerald">{stat.trend}</div>
                     </div>
                   ))}
@@ -171,23 +171,23 @@ export default function Academy() {
                     { name: "Priya M.", rating: 980, progress: 72 },
                     { name: "Rahul K.", rating: 1450, progress: 91 },
                   ].map((student) => (
-                    <div key={student.name} className="flex items-center gap-3 p-3 bg-white/[0.02] rounded-xl border border-white/5">
+                    <div key={student.name} className="flex items-center gap-3 p-3 bg-foreground/[0.02] rounded-xl border border-foreground/5">
                       <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-xs font-bold text-white">
                         {student.name[0]}
                       </div>
                       <div className="flex-1 min-w-0">
-                        <div className="text-sm font-medium text-white">{student.name}</div>
-                        <div className="text-xs text-white/30">ELO {student.rating}</div>
+                        <div className="text-sm font-medium text-foreground">{student.name}</div>
+                        <div className="text-xs text-foreground/30">ELO {student.rating}</div>
                       </div>
                       <div className="w-20">
-                        <div className="h-1.5 bg-white/5 rounded-full overflow-hidden">
+                        <div className="h-1.5 bg-foreground/5 rounded-full overflow-hidden">
                           <div
                             className="h-full rounded-full bg-gradient-to-r from-primary to-secondary"
                             style={{ width: `${student.progress}%` }}
                           />
                         </div>
                       </div>
-                      <span className="text-xs text-white/40">{student.progress}%</span>
+                      <span className="text-xs text-foreground/40">{student.progress}%</span>
                     </div>
                   ))}
                 </div>

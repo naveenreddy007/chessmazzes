@@ -55,7 +55,7 @@ export default function Features() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
             Everything You Need to <span className="gradient-text">Level Up</span>
           </h2>
-          <p className="text-white/40 text-lg max-w-2xl mx-auto">
+          <p className="text-foreground/40 text-lg max-w-2xl mx-auto">
             A complete chess improvement ecosystem powered by artificial intelligence.
           </p>
         </motion.div>
@@ -69,7 +69,7 @@ export default function Features() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className={`group ${i === 4 ? "sm:col-span-2 lg:col-span-1" : ""}`}
             >
-              <div className="glass-card p-7 h-full hover:border-white/15 transition-all duration-500 hover:-translate-y-1 relative overflow-hidden">
+              <div className="glass-card p-7 h-full hover:border-foreground/15 transition-all duration-500 hover:-translate-y-1 relative overflow-hidden">
                 {/* Hover glow */}
                 <div className={`absolute -top-16 -right-16 w-32 h-32 bg-gradient-to-br ${feat.gradient} rounded-full blur-3xl opacity-0 group-hover:opacity-[0.08] transition-opacity duration-700`} />
 
@@ -77,8 +77,8 @@ export default function Features() {
                   {feat.icon}
                 </div>
 
-                <h3 className="text-lg font-bold text-white mb-2">{feat.title}</h3>
-                <p className="text-white/40 text-sm leading-relaxed group-hover:text-white/55 transition-colors duration-300">{feat.desc}</p>
+                <h3 className="text-lg font-bold text-foreground mb-2">{feat.title}</h3>
+                <p className="text-foreground/40 text-sm leading-relaxed group-hover:text-foreground/55 transition-colors duration-300">{feat.desc}</p>
               </div>
             </motion.div>
           ))}

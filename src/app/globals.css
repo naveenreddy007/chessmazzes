@@ -1,26 +1,50 @@
 @import "tailwindcss";
 
 :root {
-  --background: #06090f;
-  --foreground: #e8ecf4;
+  color-scheme: light dark;
+  
+  --background: #f8fafc;
+  --foreground: #0f172a;
   
   /* Semantic Brand Colors - CHANGE THESE TO UPDATE THEME */
-  --primary: #3b82f6;       /* Electric Blue */
-  --secondary: #8b5cf6;     /* Violet */
-  --accent: #06b6d4;        /* Cyan */
-  --surface: #0a0e1a;       /* Dark Navy */
-  --surface-light: #111827; /* Card Background */
+  --primary: #2563eb;       /* Electric Blue */
+  --secondary: #7c3aed;     /* Violet */
+  --accent: #0891b2;        /* Cyan */
+  --surface: #ffffff;       /* Light Surface */
+  --surface-light: #f1f5f9; /* Card Background */
   
   /* Utility Colors */
-  --emerald: #10b981;
-  --rose: #f43f5e;
-  --amber: #f59e0b;
+  --emerald: #059669;
+  --rose: #e11d48;
+  --amber: #d97706;
   
   /* Glass & Borders */
-  --border-subtle: rgba(255, 255, 255, 0.06);
-  --border-glass: rgba(255, 255, 255, 0.1);
-  --glass-bg: rgba(15, 22, 41, 0.6);
-  --glass-bg-strong: rgba(15, 22, 41, 0.85);
+  --border-subtle: rgba(0, 0, 0, 0.08);
+  --border-glass: rgba(0, 0, 0, 0.15);
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-bg-strong: rgba(255, 255, 255, 0.9);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #06090f;
+    --foreground: #e8ecf4;
+    
+    --primary: #3b82f6;       /* Electric Blue */
+    --secondary: #8b5cf6;     /* Violet */
+    --accent: #06b6d4;        /* Cyan */
+    --surface: #0a0e1a;       /* Dark Navy */
+    --surface-light: #111827; /* Card Background */
+    
+    --emerald: #10b981;
+    --rose: #f43f5e;
+    --amber: #f59e0b;
+    
+    --border-subtle: rgba(255, 255, 255, 0.06);
+    --border-glass: rgba(255, 255, 255, 0.1);
+    --glass-bg: rgba(15, 22, 41, 0.6);
+    --glass-bg-strong: rgba(15, 22, 41, 0.85);
+  }
 }
 
 @theme inline {
@@ -110,8 +134,8 @@ body {
   border-radius: 16px;
   padding: 1px;
   background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
@@ -129,7 +153,7 @@ body {
 }
 
 .btn-secondary {
-  @apply px-6 py-3 rounded-xl font-bold text-white/80 border border-white/10 hover:border-white/20 hover:bg-white/5 transition-all duration-300 hover:-translate-y-0.5 active:scale-[0.98];
+  @apply px-6 py-3 rounded-xl font-bold text-foreground/80 border border-foreground/10 hover:border-foreground/20 hover:bg-foreground/5 transition-all duration-300 hover:-translate-y-0.5 active:scale-[0.98];
 }
 
 /* Glow effects */

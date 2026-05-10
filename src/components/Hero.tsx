@@ -31,10 +31,10 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 mb-6"
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-foreground/10 bg-foreground/5 mb-6"
             >
               <span className="w-2 h-2 rounded-full bg-emerald animate-pulse" />
-              <span className="text-xs font-medium text-white/70 tracking-wide uppercase">
+              <span className="text-xs font-medium text-foreground/70 tracking-wide uppercase">
                 AI-Powered Chess Training
               </span>
             </motion.div>
@@ -56,7 +56,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="text-lg sm:text-xl text-white/50 max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed"
+              className="text-lg sm:text-xl text-foreground/50 max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed"
             >
               ChessMazes turns your real game mistakes into personalized training
               and tracks your improvement over time.
@@ -93,15 +93,15 @@ export default function Hero() {
                 {["#3b82f6", "#8b5cf6", "#06b6d4", "#10b981"].map((color, i) => (
                   <div
                     key={i}
-                    className="w-8 h-8 rounded-full border-2 border-background flex items-center justify-center text-xs font-bold text-white"
+                    className="w-8 h-8 rounded-full border-2 border-background flex items-center justify-center text-xs font-bold text-foreground"
                     style={{ backgroundColor: color }}
                   >
                     {["A", "K", "R", "M"][i]}
                   </div>
                 ))}
               </div>
-              <div className="text-sm text-white/40">
-                <span className="text-white/70 font-medium">2,000+</span> on the waitlist
+              <div className="text-sm text-foreground/40">
+                <span className="text-foreground/70 font-medium">2,000+</span> on the waitlist
               </div>
             </motion.div>
           </div>

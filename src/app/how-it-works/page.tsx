@@ -25,9 +25,9 @@ export default function HowItWorksPage() {
 
         <div className="relative z-10 max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-16 text-center py-10 sm:py-16">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-foreground/10 bg-foreground/5 mb-8">
             <span className="w-2 h-2 rounded-full bg-amber animate-pulse" />
-            <span className="text-xs font-medium text-white/70 tracking-wide uppercase">
+            <span className="text-xs font-medium text-foreground/70 tracking-wide uppercase">
               App Coming Soon
             </span>
           </div>
@@ -36,7 +36,7 @@ export default function HowItWorksPage() {
             From Mistakes to{" "}
             <span className="gradient-text">Mastery</span>
           </h1>
-          <p className="text-xl text-white/40 max-w-2xl mx-auto leading-relaxed mb-10">
+          <p className="text-xl text-foreground/40 max-w-2xl mx-auto leading-relaxed mb-10">
             ChessMazes uses a proven 5-step loop to systematically eliminate your chess weaknesses 
             and build lasting improvement.
           </p>
@@ -46,10 +46,10 @@ export default function HowItWorksPage() {
             {["Upload", "Analyze", "Detect", "Train", "Improve"].map((step, i) => (
               <div key={step} className="flex items-center gap-3 sm:gap-4">
                 <div className="flex flex-col items-center">
-                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 flex items-center justify-center text-xs font-bold text-white/60">
+                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-white/5 to-white/[0.02] border border-foreground/10 flex items-center justify-center text-xs font-bold text-white/60">
                     {i + 1}
                   </div>
-                  <span className="text-[10px] text-white/30 mt-1.5">{step}</span>
+                  <span className="text-[10px] text-foreground/30 mt-1.5">{step}</span>
                 </div>
                 {i < 4 && (
                   <div className="w-6 sm:w-8 h-px bg-gradient-to-r from-violet/40 to-cyan/40 -mt-3" />
@@ -73,7 +73,7 @@ export default function HowItWorksPage() {
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-6">
             The <span className="gradient-text">Improvement Loop</span>
           </h2>
-          <p className="text-white/40 text-lg mb-12 max-w-2xl mx-auto">
+          <p className="text-foreground/40 text-lg mb-12 max-w-2xl mx-auto">
             Unlike other platforms that give you random puzzles, ChessMazes creates a continuous feedback loop 
             that adapts to your progress every single day.
           </p>
@@ -84,11 +84,11 @@ export default function HowItWorksPage() {
               { step: "Target", icon: "🎯", desc: "Weaknesses are mapped and prioritized. Training is generated specifically for you." },
               { step: "Improve", icon: "📈", desc: "As you train, your weakness scores drop. The system adapts and finds new areas." },
             ].map((item, i) => (
-              <div key={item.step} className="glass-card p-6 relative overflow-hidden group hover:border-white/15 transition-all duration-300">
+              <div key={item.step} className="glass-card p-6 relative overflow-hidden group hover:border-foreground/15 transition-all duration-300">
                 <div className="text-3xl mb-4">{item.icon}</div>
                 <div className="text-xs font-mono text-violet/50 mb-2">STEP {i + 1}</div>
-                <h3 className="text-lg font-bold text-white mb-2">{item.step}</h3>
-                <p className="text-sm text-white/40 group-hover:text-white/55 transition-colors">{item.desc}</p>
+                <h3 className="text-lg font-bold text-foreground mb-2">{item.step}</h3>
+                <p className="text-sm text-foreground/40 group-hover:text-foreground/55 transition-colors">{item.desc}</p>
               </div>
             ))}
           </div>

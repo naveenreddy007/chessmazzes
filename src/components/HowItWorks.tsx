@@ -31,7 +31,7 @@ export default function HowItWorks() {
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
             How <span className="gradient-text">ChessMazes</span> Works
           </h2>
-          <p className="text-white/40 text-lg max-w-2xl mx-auto">
+          <p className="text-foreground/40 text-lg max-w-2xl mx-auto">
             From your real games to measurable improvement — in five simple steps.
           </p>
         </motion.div>
@@ -57,15 +57,15 @@ export default function HowItWorks() {
 
                 {/* Content card */}
                 <div className={`sm:ml-16 md:ml-0 md:w-[45%] ${i % 2 === 0 ? "md:mr-auto md:pr-12" : "md:ml-auto md:pl-12"}`}>
-                  <div className="glass-card p-6 hover:border-white/15 transition-all duration-300 hover:-translate-y-0.5 group">
+                  <div className="glass-card p-6 hover:border-foreground/15 transition-all duration-300 hover:-translate-y-0.5 group">
                     <div className="flex items-center gap-4 mb-3">
                       <span className="text-2xl">{step.icon}</span>
                       <div>
                         <span className="text-xs font-mono text-secondary/70 block">STEP {step.num}</span>
-                        <h3 className="text-lg font-bold text-white">{step.title}</h3>
+                        <h3 className="text-lg font-bold text-foreground">{step.title}</h3>
                       </div>
                     </div>
-                    <p className="text-white/40 text-sm leading-relaxed group-hover:text-white/55 transition-colors">{step.desc}</p>
+                    <p className="text-foreground/40 text-sm leading-relaxed group-hover:text-foreground/55 transition-colors">{step.desc}</p>
                   </div>
                 </div>
               </motion.div>

@@ -23,9 +23,9 @@ export default function FeaturesPage() {
 
         <div className="relative z-10 max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-16 text-center py-10 sm:py-16">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-foreground/10 bg-foreground/5 mb-8">
             <span className="w-2 h-2 rounded-full bg-amber animate-pulse" />
-            <span className="text-xs font-medium text-white/70 tracking-wide uppercase">
+            <span className="text-xs font-medium text-foreground/70 tracking-wide uppercase">
               App Coming Soon
             </span>
           </div>
@@ -34,7 +34,7 @@ export default function FeaturesPage() {
             Everything You Need to{" "}
             <span className="gradient-text">Level Up</span>
           </h1>
-          <p className="text-xl text-white/40 max-w-2xl mx-auto leading-relaxed mb-10">
+          <p className="text-xl text-foreground/40 max-w-2xl mx-auto leading-relaxed mb-10">
             A complete chess improvement ecosystem powered by artificial intelligence. 
             Every tool is designed to find, fix, and track your weaknesses.
           </p>
@@ -48,7 +48,7 @@ export default function FeaturesPage() {
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="text-2xl sm:text-3xl font-bold gradient-text">{stat.value}</div>
-                <div className="text-xs text-white/30 mt-1">{stat.label}</div>
+                <div className="text-xs text-foreground/30 mt-1">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -69,14 +69,14 @@ export default function FeaturesPage() {
               <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
                 Stockfish-Powered <span className="gradient-text">Engine Analysis</span>
               </h2>
-              <p className="text-white/40 leading-relaxed mb-6">
+              <p className="text-foreground/40 leading-relaxed mb-6">
                 Every game you play or upload is analyzed by one of the strongest chess engines in the world. 
                 We don&apos;t just tell you the best move — we categorize your mistakes into tactical, 
                 positional, and endgame errors so you know exactly what to work on.
               </p>
               <ul className="space-y-3">
                 {["Move-by-move evaluation", "Mistake categorization (tactical, positional, endgame)", "Best move suggestions with explanations", "Accuracy percentage per game"].map((item) => (
-                  <li key={item} className="flex items-center gap-2 text-sm text-white/50">
+                  <li key={item} className="flex items-center gap-2 text-sm text-foreground/50">
                     <span className="text-emerald">✓</span>
                     {item}
                   </li>
@@ -87,15 +87,15 @@ export default function FeaturesPage() {
               <div className="absolute -top-20 -right-20 w-40 h-40 bg-gradient-to-br from-amber/10 to-rose/10 rounded-full blur-3xl" />
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-sm font-medium text-white">Game Analysis</span>
+                  <span className="text-sm font-medium text-foreground">Game Analysis</span>
                   <span className="text-xs text-emerald bg-emerald/10 px-2 py-1 rounded-full">Completed</span>
                 </div>
-                <div className="bg-white/[0.03] rounded-xl p-4 border border-white/5">
+                <div className="bg-foreground/[0.03] rounded-xl p-4 border border-foreground/5">
                   <div className="flex justify-between mb-2">
-                    <span className="text-xs text-white/30">Accuracy</span>
+                    <span className="text-xs text-foreground/30">Accuracy</span>
                     <span className="text-sm font-bold text-emerald">78.4%</span>
                   </div>
-                  <div className="h-2 bg-white/5 rounded-full overflow-hidden">
+                  <div className="h-2 bg-foreground/5 rounded-full overflow-hidden">
                     <div className="h-full w-[78%] rounded-full bg-gradient-to-r from-emerald to-cyan" />
                   </div>
                 </div>
@@ -105,9 +105,9 @@ export default function FeaturesPage() {
                     { label: "Mistakes", value: "5", color: "text-amber" },
                     { label: "Blunders", value: "2", color: "text-rose" },
                   ].map((stat) => (
-                    <div key={stat.label} className="bg-white/[0.03] rounded-lg p-3 border border-white/5 text-center">
+                    <div key={stat.label} className="bg-foreground/[0.03] rounded-lg p-3 border border-foreground/5 text-center">
                       <div className={`text-lg font-bold ${stat.color}`}>{stat.value}</div>
-                      <div className="text-[10px] text-white/30">{stat.label}</div>
+                      <div className="text-[10px] text-foreground/30">{stat.label}</div>
                     </div>
                   ))}
                 </div>
@@ -123,19 +123,19 @@ export default function FeaturesPage() {
             <div className="order-2 lg:order-1 glass-card p-8 relative overflow-hidden">
               <div className="absolute -top-20 -left-20 w-40 h-40 bg-gradient-to-br from-violet/10 to-blue-electric/10 rounded-full blur-3xl" />
               <div className="space-y-3">
-                <div className="text-sm font-medium text-white mb-4">Weakness Map</div>
+                <div className="text-sm font-medium text-foreground mb-4">Weakness Map</div>
                 {[
                   { name: "Knight Forks", severity: 85, color: "from-rose to-amber" },
                   { name: "Pawn Structure", severity: 62, color: "from-amber to-rose" },
                   { name: "Endgame Technique", severity: 45, color: "from-blue-electric to-cyan" },
                   { name: "Opening Theory", severity: 30, color: "from-emerald to-cyan" },
                 ].map((weakness) => (
-                  <div key={weakness.name} className="bg-white/[0.03] rounded-xl p-3 border border-white/5">
+                  <div key={weakness.name} className="bg-foreground/[0.03] rounded-xl p-3 border border-foreground/5">
                     <div className="flex justify-between mb-1.5">
-                      <span className="text-xs text-white/50">{weakness.name}</span>
-                      <span className="text-xs text-white/30">{weakness.severity}%</span>
+                      <span className="text-xs text-foreground/50">{weakness.name}</span>
+                      <span className="text-xs text-foreground/30">{weakness.severity}%</span>
                     </div>
-                    <div className="h-1.5 bg-white/5 rounded-full overflow-hidden">
+                    <div className="h-1.5 bg-foreground/5 rounded-full overflow-hidden">
                       <div className={`h-full rounded-full bg-gradient-to-r ${weakness.color}`} style={{ width: `${weakness.severity}%` }} />
                     </div>
                   </div>
@@ -147,14 +147,14 @@ export default function FeaturesPage() {
               <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
                 Your Personal <span className="gradient-text">Weakness Map</span>
               </h2>
-              <p className="text-white/40 leading-relaxed mb-6">
+              <p className="text-foreground/40 leading-relaxed mb-6">
                 ChessMazes doesn&apos;t just analyze one game — it looks across all your games to find 
                 patterns. If you keep missing knight forks or struggling with rook endgames, 
                 we&apos;ll know and build training around it.
               </p>
               <ul className="space-y-3">
                 {["Cross-game pattern analysis", "Persistent weakness memory", "Severity scoring for each weakness", "Automatic re-evaluation as you improve"].map((item) => (
-                  <li key={item} className="flex items-center gap-2 text-sm text-white/50">
+                  <li key={item} className="flex items-center gap-2 text-sm text-foreground/50">
                     <span className="text-emerald">✓</span>
                     {item}
                   </li>
